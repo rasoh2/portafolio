@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 /**
  * Componente Contact - Sección de contacto con formulario funcional
@@ -35,23 +37,19 @@ function Contact() {
 
     // Simula el envío del formulario (aquí integrarías tu servicio real)
     try {
-      // Ejemplo: await fetch('tu-api-url', { method: 'POST', body: JSON.stringify(formData) })
-
-      // Simulación de delay
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
-      // Éxito
+      await emailjs.send(
+        "service_5f4f4d5", // Reemplaza por tu Service ID
+        "template_5f4f4d5", // Reemplaza por tu Template ID
+        formData,
+        "C8-WrHIIgWEB1FXae", // Tu Public Key
+      );
       setFormStatus({ submitting: false, submitted: true, error: false });
-
-      // Resetea el formulario
       setFormData({ name: "", email: "", subject: "", message: "" });
-
-      // Oculta el mensaje de éxito después de 5 segundos
       setTimeout(() => {
         setFormStatus({ submitting: false, submitted: false, error: false });
       }, 5000);
-    } catch {
-      alert("Hubo un error.");
+    } catch (error) {
+      setFormStatus({ submitting: false, submitted: false, error: true });
     }
   };
 
