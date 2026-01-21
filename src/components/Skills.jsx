@@ -6,7 +6,7 @@ function Skills() {
   // Habilidades organizadas por categorías - Nivel Junior
   const skillsData = {
     frontend: [
-      { name: "HTML5", level: 60, icon: "fab fa-html5", color: "#E34F26" },
+      { name: "HTML5", level: 55, icon: "fab fa-html5", color: "#E34F26" },
       {
         name: "CSS3 / Bootstrap",
         level: 55,
@@ -15,59 +15,59 @@ function Skills() {
       },
       {
         name: "JavaScript (ES6+)",
-        level: 58,
+        level: 50,
         icon: "fab fa-js",
         color: "#F7DF1E",
       },
-      { name: "React.js", level: 55, icon: "fab fa-react", color: "#61DAFB" },
-      { name: "Vue.js", level: 50, icon: "fab fa-vuejs", color: "#4FC08D" },
+      { name: "React.js", level: 45, icon: "fab fa-react", color: "#61DAFB" },
+      { name: "Vue.js", level: 40, icon: "fab fa-vuejs", color: "#4FC08D" },
       {
         name: "Responsive Design",
-        level: 60,
+        level: 50,
         icon: "fas fa-mobile-alt",
         color: "#6C63FF",
       },
     ],
     backend: [
-      { name: "Node.js", level: 55, icon: "fab fa-node", color: "#339933" },
+      { name: "Node.js", level: 35, icon: "fab fa-node", color: "#339933" },
       {
         name: "Python",
-        level: 45,
+        level: 35,
         icon: "fab fa-python",
         color: "#3776AB",
       },
       {
         name: "PostgreSQL",
-        level: 52,
+        level: 40,
         icon: "fas fa-database",
         color: "#4479A1",
       },
       {
         name: "Oracle SQL",
-        level: 48,
+        level: 35,
         icon: "fas fa-database",
         color: "#F80000",
       },
-      { name: "API REST", level: 58, icon: "fas fa-plug", color: "#FF6C37" },
+      { name: "API REST", level: 45, icon: "fas fa-plug", color: "#FF6C37" },
     ],
     tools: [
       {
         name: "Git / GitHub",
-        level: 58,
+        level: 55,
         icon: "fab fa-git-alt",
         color: "#F05032",
       },
-      { name: "VS Code", level: 65, icon: "fas fa-code", color: "#007ACC" },
-      { name: "Jira", level: 50, icon: "fab fa-jira", color: "#0052CC" },
+      { name: "VS Code", level: 60, icon: "fas fa-code", color: "#007ACC" },
+      { name: "Jira", level: 40, icon: "fab fa-jira", color: "#0052CC" },
       {
         name: "Excel / Office",
-        level: 80,
+        level: 70,
         icon: "fas fa-file-excel",
         color: "#217346",
       },
       {
         name: "Metodologías Ágiles (Scrum)",
-        level: 55,
+        level: 50,
         icon: "fas fa-tasks",
         color: "#6C63FF",
       },

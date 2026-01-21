@@ -2,6 +2,13 @@
  * Componente Projects - Sección de proyectos destacados
  * Muestra cards con información de cada proyecto
  */
+
+import proyecto1 from "../assets/proyecto1.png";
+import proyecto2 from "../assets/proyecto2.png";
+import proyecto3 from "../assets/proyecto3.png";
+import proyecto4 from "../assets/proyecto4.png";
+import proyecto5 from "../assets/proyecto5.png";
+
 function Projects() {
   // Array de proyectos (puedes agregar más o modificar estos)
   const projects = [
@@ -10,8 +17,7 @@ function Projects() {
       title: "AlkeWallet",
       description:
         "Billetera digital con simulación de transferencias, depósitos y gestión de saldo en tiempo real.",
-      image:
-        "https://via.placeholder.com/600x400/6C63FF/FFFFFF?text=AlkeWallet",
+      image: proyecto1,
       technologies: ["jQuery", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://alkewallet.netlify.app/menu.html",
       repoUrl: "https://github.com/rasoh2/alke-wallet",
@@ -22,10 +28,9 @@ function Projects() {
       title: "Contador con Vue.js",
       description:
         "Aplicación interactiva que almacena en una lista los números seleccionados con contador dinámico.",
-      image:
-        "https://via.placeholder.com/600x400/42A5F5/FFFFFF?text=Vue+Counter",
+      image: proyecto2,
       technologies: ["Vue.js", "Bootstrap", "JavaScript", "HTML", "CSS"],
-      demoUrl: "https://vuejsdemos.netlify.app/",
+      demoUrl: "https://contador1-vuejs.netlify.app/",
       repoUrl: "https://github.com/rasoh2/first-proyect-vue",
       featured: true,
     },
@@ -34,7 +39,7 @@ function Projects() {
       title: "PokéAPI Explorer",
       description:
         "Explorador de Pokémon con consumo de API externa, búsqueda y visualización detallada de información.",
-      image: "https://via.placeholder.com/600x400/66BB6A/FFFFFF?text=PokeAPI",
+      image: proyecto3,
       technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://pokeapih2.netlify.app/",
       repoUrl: "https://github.com/rasoh2/PokeApi",
@@ -45,12 +50,22 @@ function Projects() {
       title: "Web Chile Pro",
       description:
         "Página web profesional para generar presupuestos personalizados de desarrollo de sitios web.",
-      image:
-        "https://via.placeholder.com/600x400/FFA726/FFFFFF?text=Web+Chile+Pro",
+      image: proyecto4,
       technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://app.netlify.com/projects/webchilepro/overview",
       repoUrl: "https://github.com/rasoh2/webChilePro",
       featured: true,
+    },
+    {
+      id: 5,
+      title: "To-Do List App",
+      description:
+        "Aplicación de gestión de tareas con funcionalidades de agregar, editar, eliminar y marcar como completadas.",
+      image: proyecto5,
+      technologies: ["React", "Bootstrap", "JavaScript", "CSS", "HTML"],
+      demoUrl: "https://to-do-list-pro3.netlify.app/",
+      repoUrl: "https://github.com/rasoh2/todolist",
+      featured: false,
     },
   ];
 
