@@ -1,0 +1,73 @@
+/* ========================================
+   ESTILOS GLOBALES BASE
+   - Reset CSS básico
+   - Configuración de tipografías
+   - Smooth scroll
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Optimización de renderizado */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: #ffffff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Smooth scroll para toda la página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejora la accesibilidad del scroll en navegadores */
+:focus-visible {
+  outline: 2px solid #6c63ff;
+  outline-offset: 3px;
+}
+
+/* Estilos de selección de texto */
+::selection {
+  background-color: #6c63ff;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #6c63ff;
+  color: white;
+}
+
+/* Scrollbar personalizado (solo Chrome y Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5549cc;
+}
