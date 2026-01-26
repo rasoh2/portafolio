@@ -315,7 +315,7 @@ function Skills() {
           >
             <div className='stat-box text-center'>
               <i className='fas fa-users stat-icon'></i>
-              <h4 className='stat-number'>19</h4>
+              <h4 className='stat-number'>3</h4>
               <p className='stat-label'>Años de Experiencia</p>
             </div>
           </div>
@@ -327,7 +327,7 @@ function Skills() {
             <div className='stat-box text-center'>
               <i className='fas fa-language stat-icon'></i>
               <h4 className='stat-number'>Inglés</h4>
-              <p className='stat-label'>Nivel Básico</p>
+              <p className='stat-label'>Basic (constantly improving)</p>
             </div>
           </div>
         </div>

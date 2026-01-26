@@ -9,10 +9,10 @@ import emailjs from "@emailjs/browser";
 function Contact() {
   // Estados para el formulario
   const [formData, setFormData] = useState({
-    name: "",
+    nombre: "",
     email: "",
-    subject: "",
-    message: "",
+    title: "",
+    message: "", // Si quieres enviar el mensaje, agrégalo también en la plantilla
   });
 
   const [formStatus, setFormStatus] = useState({
@@ -38,13 +38,13 @@ function Contact() {
     // Simula el envío del formulario (aquí integrarías tu servicio real)
     try {
       await emailjs.send(
-        "service_5f4f4d5", // Reemplaza por tu Service ID
-        "template_5f4f4d5", // Reemplaza por tu Template ID
+        "service_ajdpxs8", // Tu Service ID
+        "template_0uey8lt", // Tu Template ID real (no "TU_TEMPLATE_ID")
         formData,
         "C8-WrHIIgWEB1FXae", // Tu Public Key
       );
       setFormStatus({ submitting: false, submitted: true, error: false });
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      setFormData({ nombre: "", email: "", title: "", message: "" });
       setTimeout(() => {
         setFormStatus({ submitting: false, submitted: false, error: false });
       }, 5000);
@@ -147,15 +147,15 @@ function Contact() {
               <form onSubmit={handleSubmit} className='contact-form'>
                 {/* Nombre */}
                 <div className='mb-3'>
-                  <label htmlFor='name' className='form-label'>
+                  <label htmlFor='nombre' className='form-label'>
                     Nombre Completo *
                   </label>
                   <input
                     type='text'
                     className='form-control'
-                    id='name'
-                    name='name'
-                    value={formData.name}
+                    id='nombre'
+                    name='nombre'
+                    value={formData.nombre}
                     onChange={handleChange}
                     required
                     placeholder='Tu nombre'
@@ -181,15 +181,15 @@ function Contact() {
 
                 {/* Asunto */}
                 <div className='mb-3'>
-                  <label htmlFor='subject' className='form-label'>
+                  <label htmlFor='title' className='form-label'>
                     Asunto *
                   </label>
                   <input
                     type='text'
                     className='form-control'
-                    id='subject'
-                    name='subject'
-                    value={formData.subject}
+                    id='title'
+                    name='title'
+                    value={formData.title}
                     onChange={handleChange}
                     required
                     placeholder='Asunto del mensaje'

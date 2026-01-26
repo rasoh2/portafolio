@@ -38,14 +38,17 @@ function About() {
                 Desarrollador Full Stack con experiencia en la creación de
                 aplicaciones web modernas utilizando React, Vue.js, Node.js y
                 bases de datos PostgreSQL y Oracle. Formado en Desafío Latam y
-                cursando 3° semestre de Analista Programador en INACAP.
+                actualmente cursando la carrera de Analista Programador en
+                INACAP.
               </p>
 
               <p className='mb-4'>
-                Con 19 años de experiencia en el ámbito militar, donde fortalecí
-                habilidades como liderazgo, disciplina, trabajo en equipo y
-                trabajo bajo presión, que hoy aplico en el desarrollo de
-                software y en la gestión de proyectos tecnológicos.
+                Desde 2023 he desarrollado una transición profesional
+                planificada hacia el desarrollo de software, respaldada por una
+                formación constante y la aplicación de conocimientos en
+                proyectos reales y trabajo colaborativo. Aporto disciplina,
+                organización y capacidad de trabajo bajo presión, orientadas al
+                cumplimiento de objetivos en entornos tecnológicos.
               </p>
 
               {/* Datos destacados */}
