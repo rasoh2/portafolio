@@ -91,7 +91,7 @@ function Footer() {
               </li>
               <li>
                 <i className='fas fa-phone me-2'></i>
-                <a href='tel:+573186746513'>+57 318 674 6513</a>
+                <a href='tel:+56966753705'>+56 966753705</a>
               </li>
               <li>
                 <i className='fas fa-map-marker-alt me-2'></i>
@@ -110,7 +110,7 @@ function Footer() {
             <div className='footer-bottom text-center'>
               <p className='mb-0'>
                 &copy; {currentYear} <strong>Sebastian Ortega Auriol</strong>.
-                Todos los los derechos reservados.
+                Todos los derechos reservados.
               </p>
               <p className='mb-0 mt-2'>
                 Hecho con <i className='fas fa-heart text-danger'></i> y{" "}
