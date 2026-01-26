@@ -91,7 +91,7 @@ function Footer() {
               </li>
               <li>
                 <i className='fas fa-phone me-2'></i>
-                <a href='tel:+56966753705'>+56 966753705</a>
+                <a href='tel:+56966753705'>+56 9 667 53705</a>
               </li>
               <li>
                 <i className='fas fa-map-marker-alt me-2'></i>
