@@ -47,7 +47,7 @@ function About() {
                 planificada hacia el desarrollo de software, respaldada por una
                 formación constante y la aplicación de conocimientos en
                 proyectos reales y trabajo colaborativo. Aporto disciplina,
-                organización y capacidad de trabajo bajo presión, orientadas al
+                organización y capacidad de trabajo en equipo , orientadas al
                 cumplimiento de objetivos en entornos tecnológicos.
               </p>
 
