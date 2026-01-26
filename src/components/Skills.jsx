@@ -326,8 +326,8 @@ function Skills() {
           >
             <div className='stat-box text-center'>
               <i className='fas fa-language stat-icon'></i>
-              <h4 className='stat-number'>Inglés</h4>
-              <p className='stat-label'>Basic (constantly improving)</p>
+              <h4 className='stat-number'>English</h4>
+              <p className='stat-label'>Basic level (constantly improving)</p>
             </div>
           </div>
         </div>
