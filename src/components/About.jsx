@@ -97,7 +97,11 @@ function About() {
 
               {/* Botón de descarga CV */}
               <div className='mt-4'>
-                <a href='/cv.pdf' className='btn btn-primary' download>
+                <a
+                  href='/cv_sebastian_ortega.pdf'
+                  className='btn btn-primary'
+                  download
+                >
                   <i className='fas fa-download me-2'></i>
                   Descargar CV
                 </a>
