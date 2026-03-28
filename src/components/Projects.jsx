@@ -16,7 +16,7 @@ function Projects() {
       id: 1,
       title: "AlkeWallet",
       description:
-        "Billetera digital con simulación de transferencias, depósitos y gestión de saldo en tiempo real.",
+        "Arquitectura de billetera digital enfocada en integridad transaccional. Modelo relacional escalable con validaciones de seguridad, gestor de saldo en tiempo real y simulación de operaciones financieras. Implementa patrones de separación de responsabilidades.",
       image: proyecto1,
       technologies: [
         "jQuery",
@@ -56,7 +56,7 @@ function Projects() {
       id: 4,
       title: "Web Chile Pro",
       description:
-        "Página web profesional para generar presupuestos personalizados de desarrollo de sitios web.",
+        "Plataforma SaaS para generación dinámica de presupuestos. Arquitectura modular con componentes reutilizables (React), formularios reactivos y cálculo automático de costos. Interfaz responsive optimizada para dispositivos móviles y desktop.",
       image: proyecto4,
       technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://webchilepro.netlify.app/",

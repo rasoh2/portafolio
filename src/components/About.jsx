@@ -36,20 +36,22 @@ function About() {
                 Desarrollador Full Stack | Analista Programador
               </h3>
               <p className='lead mb-4'>
-                Desarrollador Full Stack con experiencia en la creación de
-                aplicaciones web modernas utilizando React, Vue.js, Node.js y
-                bases de datos PostgreSQL y Oracle. Formado en Desafío Latam y
-                actualmente cursando la carrera de Analista Programador en
-                INACAP.
+                Desarrollador Full Stack especializado en arquitectura de
+                aplicaciones escalables. Con 19 años de experiencia en entornos
+                de alta exigencia (Fuerzas Armadas), aporto disciplina,
+                resolución de problemas críticos y trabajo bajo presión.
+                Actualizado en React, Vue.js, Node.js/Express y bases de datos
+                relacionales (PostgreSQL) y NoSQL (MongoDB).
               </p>
 
               <p className='mb-4'>
-                Desde 2023 he desarrollado una transición profesional
-                planificada hacia el desarrollo de software, respaldada por una
-                formación constante y la aplicación de conocimientos en
-                proyectos reales y trabajo colaborativo. Aporto disciplina,
-                organización y capacidad de trabajo en equipo , orientadas al
-                cumplimiento de objetivos en entornos tecnológicos.
+                Desde 2023, transición profesional planificada hacia desarrollo
+                de software con formación en Desafío Latam e INACAP (Analista
+                Programador). Mi background militar me permite gestionar
+                jerarquías de prioridades, liderar equipos bajo presión y
+                garantizar integridad de procesos. Aplico principios de
+                arquitectura limpia, escalabilidad y eficiencia en cada
+                proyecto.
               </p>
 
               {/* Datos destacados */}
@@ -74,8 +76,9 @@ function About() {
                 </div>
                 <div className='col-md-6 mb-3'>
                   <div className='about-info-item'>
-                    <i className='fas fa-briefcase text-primary me-2'></i>
-                    <strong>Experiencia:</strong> Full Stack Developer
+                    <i className='fas fa-medal text-primary me-2'></i>
+                    <strong>Trayectoria:</strong> 19 años Fuerzas Armadas + Full
+                    Stack Dev
                   </div>
                 </div>
               </div>

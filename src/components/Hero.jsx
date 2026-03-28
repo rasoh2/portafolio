@@ -37,9 +37,10 @@ function Hero() {
               data-aos='fade-up'
               data-aos-delay='200'
             >
-              Desarrollador Full Stack especializado en tecnologías modernas.
-              Experiencia en React, Vue.js, Node.js, PostgreSQL y Express.
-              Enfocado en crear soluciones escalables y eficientes.
+              Full Stack Developer con 19 años en entornos de alta exigencia
+              (Fuerzas Armadas). Especializado en arquitectura escalable: React,
+              Node.js/Express, PostgreSQL y MongoDB. Aporto disciplina,
+              resolución de problemas críticos y ejecución bajo presión.
             </p>
 
             {/* Botones de acción */}
