@@ -34,7 +34,7 @@ function Projects() {
       id: 2,
       title: "Contador con Vue.js",
       description:
-        "Aplicación interactiva que almacena en una lista los números seleccionados con contador dinámico.",
+        "Sistema de gestión de lista reactivo implementado con Vue.js. Arquitectura de componentes con estado centralizado, manipulación dinámica de arrays y actualizaciones en tiempo real. Demuestra dominio de reactividad, two-way binding y lifecycle hooks de Vue.",
       image: proyecto2,
       technologies: ["Vue.js", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://contador1-vuejs.netlify.app/",
@@ -45,7 +45,7 @@ function Projects() {
       id: 3,
       title: "PokéAPI Explorer",
       description:
-        "Explorador de Pokémon con consumo de API externa, búsqueda y visualización detallada de información.",
+        "Consumidor de API RESTful con manejo avanzado de datos. Implementa búsqueda eficiente, filtrado dinámico y caché inteligente para reducir llamadas API. Arquitectura orientada a componentes reutilizables, manejo de errores con fallbacks y UX optimizada.",
       image: proyecto3,
       technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://pokeapih2.netlify.app/",
@@ -67,7 +67,7 @@ function Projects() {
       id: 5,
       title: "To-Do List App",
       description:
-        "Aplicación de gestión de tareas con funcionalidades de agregar, editar, eliminar y marcar como completadas.",
+        "Gestor de tareas con CRUD completo. Implementa persistencia de datos, filtrado por estado y ordenamiento dinámico. Arquitectura escalable con componentes React especializados, hooks personalizados y manejo eficiente de estado para operaciones complejas.",
       image: proyecto5,
       technologies: ["React", "Bootstrap", "JavaScript", "CSS", "HTML"],
       demoUrl: "https://to-do-list-pro3.netlify.app/",
