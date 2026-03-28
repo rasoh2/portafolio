@@ -10,8 +10,9 @@ function About() {
     { name: "React", icon: "fab fa-react", color: "#61DAFB" },
     { name: "Vue.js", icon: "fab fa-vuejs", color: "#4FC08D" },
     { name: "Node.js", icon: "fab fa-node", color: "#339933" },
+    { name: "Express", icon: "fas fa-server", color: "#000000" },
     { name: "PostgreSQL", icon: "fas fa-database", color: "#4479A1" },
-    { name: "Oracle SQL", icon: "fas fa-database", color: "#F80000" },
+    { name: "MongoDB", icon: "fas fa-leaf", color: "#47A248" },
     { name: "Git", icon: "fab fa-git-alt", color: "#F05032" },
   ];
 

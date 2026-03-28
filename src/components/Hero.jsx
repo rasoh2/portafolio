@@ -38,8 +38,8 @@ function Hero() {
               data-aos-delay='200'
             >
               Desarrollador Full Stack especializado en tecnologías modernas.
-              Experiencia en React, Vue.js, Node.js y PostgreSQL. Enfocado en
-              crear soluciones escalables y eficientes.
+              Experiencia en React, Vue.js, Node.js, PostgreSQL y Express.
+              Enfocado en crear soluciones escalables y eficientes.
             </p>
 
             {/* Botones de acción */}

@@ -30,6 +30,7 @@ function Skills() {
     ],
     backend: [
       { name: "Node.js", level: 35, icon: "fab fa-node", color: "#339933" },
+      { name: "Express", level: 30, icon: "fas fa-server", color: "#000000" },
       {
         name: "Python",
         level: 35,
@@ -42,13 +43,15 @@ function Skills() {
         icon: "fas fa-database",
         color: "#4479A1",
       },
+      { name: "MongoDB", level: 30, icon: "fas fa-leaf", color: "#47A248" },
       {
-        name: "Oracle SQL",
-        level: 35,
-        icon: "fas fa-database",
-        color: "#F80000",
+        name: "Git / GitHub",
+        level: 55,
+        icon: "fab fa-git-alt",
+        color: "#F05032",
       },
       { name: "API REST", level: 45, icon: "fas fa-plug", color: "#FF6C37" },
+      { name: "Express", level: 30, icon: "fas fa-server", color: "#000000" },
     ],
     tools: [
       {
