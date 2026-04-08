@@ -16,7 +16,7 @@ function Projects() {
       id: 1,
       title: "AlkeWallet",
       description:
-        "Arquitectura de billetera digital enfocada en integridad transaccional. Modelo relacional escalable con validaciones de seguridad, gestor de saldo en tiempo real y simulación de operaciones financieras. Implementa patrones de separación de responsabilidades.",
+        "Billetera digital full-stack con Express.js y arquitectura MVC escalable. Implementa autenticación segura, gestor de saldo en tiempo real, historial de transacciones y operaciones financieras. Frontend responsivo con jQuery y Bootstrap demostrando competencias en full-stack y patrones profesionales de desarrollo.",
       image: proyecto1,
       technologies: [
         "jQuery",
@@ -26,7 +26,7 @@ function Projects() {
         "CSS",
         "Express",
       ],
-      demoUrl: "https://alkewallet.netlify.app/menu.html",
+      demoUrl: "https://alke-wallet-front.netlify.app/",
       repoUrl: "https://github.com/rasoh2/alke-wallet",
       featured: true,
     },
