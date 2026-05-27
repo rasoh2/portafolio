@@ -1,6 +1,6 @@
 /**
  * Componente About - Sección "Sobre Mí"
- * Muestra información profesional y tecnologías principales
+ 
  */
 function About() {
   // Lista de tecnologías principales con iconos
