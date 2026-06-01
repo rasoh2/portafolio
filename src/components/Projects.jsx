@@ -8,6 +8,7 @@ import proyecto2 from "../assets/proyecto2.png";
 import proyecto3 from "../assets/proyecto3.png";
 import proyecto4 from "../assets/proyecto4.png";
 import proyecto5 from "../assets/proyecto5.png";
+import proyecto6 from "../assets/proyecto6.png";
 
 function Projects() {
   // Array de proyectos (puedes agregar más o modificar estos)
@@ -16,7 +17,7 @@ function Projects() {
       id: 1,
       title: "AlkeWallet",
       description:
-        "Billetera digital full-stack con Express.js y arquitectura MVC escalable. Implementa autenticación segura, gestor de saldo en tiempo real, historial de transacciones y operaciones financieras. Frontend responsivo con jQuery y Bootstrap demostrando competencias en full-stack y patrones profesionales de desarrollo.",
+        "Billetera digital full-stack. Desarrollada con Express.js bajo el patrón MVC asegurando una arquitectura backend escalable. En el frontend se utilizó jQuery y Bootstrap para agilizar la manipulación directa del DOM y maquetar interfaces responsivas, priorizando la robustez de las operaciones financieras.",
       image: proyecto1,
       technologies: [
         "jQuery",
@@ -34,7 +35,7 @@ function Projects() {
       id: 2,
       title: "Contador con Vue.js",
       description:
-        "Sistema de gestión de lista reactivo implementado con Vue.js. Arquitectura de componentes con estado centralizado, manipulación dinámica de arrays y actualizaciones en tiempo real. Demuestra dominio de reactividad, two-way binding y lifecycle hooks de Vue.",
+        "Sistema reactivo para gestión de listas. Implementado con Vue.js para aprovechar su sistema de reactividad profunda (two-way binding), lo que simplificó la lógica de manipulación dinámica de arrays. Se integró Bootstrap para componer la UI de manera ágil sin escribir CSS extenso.",
       image: proyecto2,
       technologies: ["Vue.js", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://contador1-vuejs.netlify.app/",
@@ -45,7 +46,7 @@ function Projects() {
       id: 3,
       title: "PokéAPI Explorer",
       description:
-        "Consumidor de API RESTful con manejo avanzado de datos. Implementa búsqueda eficiente, filtrado dinámico y caché inteligente para reducir llamadas API. Arquitectura orientada a componentes reutilizables, manejo de errores con fallbacks y UX optimizada.",
+        "Explorador interactivo multivariables que consume una API RESTful. Se construyó en React para manejar el complejo estado de las búsquedas y filtros dinámicos mediante una arquitectura orientada a componentes modulares, ofreciendo una experiencia veloz sin recargas de página.",
       image: proyecto3,
       technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://pokeapih2.netlify.app/",
@@ -56,7 +57,7 @@ function Projects() {
       id: 4,
       title: "Web Chile Pro",
       description:
-        "Plataforma SaaS para generación dinámica de presupuestos. Arquitectura modular con componentes reutilizables (React), formularios reactivos y cálculo automático de costos. Interfaz responsive optimizada para dispositivos móviles y desktop.",
+        "Plataforma SaaS para cotizaciones dinámicas. Se decidió por React para resolver la necesidad de cálculos automáticos en tiempo real y manejo de formularios enriquecidos mediante estados complejos. La capa de presentación se confió a Bootstrap para garantizar un comportamiento 100% responsive.",
       image: proyecto4,
       technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://webchilepro.netlify.app/",
@@ -67,12 +68,23 @@ function Projects() {
       id: 5,
       title: "To-Do List App",
       description:
-        "Gestor de tareas con CRUD completo. Implementa persistencia de datos, filtrado por estado y ordenamiento dinámico. Arquitectura escalable con componentes React especializados, hooks personalizados y manejo eficiente de estado para operaciones complejas.",
+        "Gestor de tareas avanzado con funcionalidades CRUD. Desarrollado con React haciendo uso intensivo de Hooks para manejar el ciclo de vida, estado global temporal y persistencia de datos. React demostró ser ideal para optimizar el re-renderizado en filtrados y ordenamiento de la lista.",
       image: proyecto5,
       technologies: ["React", "Bootstrap", "JavaScript", "CSS", "HTML"],
       demoUrl: "https://to-do-list-pro3.netlify.app/",
       repoUrl: "https://github.com/rasoh2/todolist",
       featured: false,
+    },
+    {
+      id: 6,
+      title: "MasterEasy Landing Page",
+      description:
+        "Landing page corporativa orientada a la conversión de leads (servicios industriales). Arquitecturada con React para abstraer secciones de la página como componentes independientes. Se aplicaron estilos modernos y estrategias responsivas para lograr una interfaz confiable que transmite profesionalismo.",
+      image: proyecto6,
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      demoUrl: "https://mastereasy.netlify.app/",
+      repoUrl: "https://github.com/rasoh2", // Cambiar por el link a tu repo
+      featured: true,
     },
   ];
 
