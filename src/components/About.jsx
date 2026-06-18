@@ -73,6 +73,9 @@ function About() {
     { name: "Express", icon: "fas fa-server", color: "#8a2be2" },
     { name: "PostgreSQL", icon: "fas fa-database", color: "#4479A1" },
     { name: "MongoDB", icon: "fas fa-leaf", color: "#47A248" },
+    { name: "Oracle / MySQL", icon: "fas fa-database", color: "#00758F" },
+    { name: "AWS", icon: "fab fa-aws", color: "#FF9900" },
+    { name: "Google Antigravity", icon: "fas fa-robot", color: "#4285F4" },
     { name: "Git / GitHub", icon: "fab fa-git-alt", color: "#F05032" }
   ];
 
