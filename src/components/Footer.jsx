@@ -112,10 +112,6 @@ function Footer() {
                 &copy; {currentYear} <strong>Sebastian Ortega Auriol</strong>.
                 Todos los derechos reservados.
               </p>
-              <p className='mb-0 mt-2'>
-                Hecho con <i className='fas fa-heart text-danger'></i> y{" "}
-                <i className='fab fa-react text-info'></i>
-              </p>
             </div>
           </div>
         </div>
