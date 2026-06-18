@@ -1,9 +1,6 @@
 /* ========================================
-   ESTILOS GLOBALES BASE
-   - Reset CSS básico
-   - Configuración de tipografías
-   - Smooth scroll
-======================================== */
+   ESTILOS GLOBALES BASE - MODO OSCURO PREMIUM
+   ======================================== */
 
 * {
   margin: 0;
@@ -16,6 +13,27 @@
   line-height: 1.6;
   font-weight: 400;
 
+  /* Colores del Sistema */
+  --bg-primary: #0a0c14;      /* Azul medianoche profundo */
+  --bg-secondary: #111422;    /* Gris carbón / Azul oscuro */
+  --bg-tertiary: #191d30;     /* Gris / Azul intermedio */
+  --text-main: #f3f4f6;       /* Blanco plateado */
+  --text-muted: #9ca3af;      /* Gris plata suave */
+  --color-accent-blue: #00f2fe; /* Cian / Azul Eléctrico */
+  --color-accent-purple: #8a2be2; /* Violeta Neón */
+  --color-accent-pink: #ff007f; /* Rosa Eléctrico para detalles */
+  
+  /* Gradientes */
+  --gradient-cyber: linear-gradient(135deg, #00f2fe 0%, #8a2be2 100%);
+  --gradient-dark: linear-gradient(180deg, #0a0c14 0%, #111422 100%);
+  
+  /* Sombras */
+  --glow-cyan: 0 0 15px rgba(0, 242, 254, 0.3);
+  --glow-purple: 0 0 15px rgba(138, 43, 226, 0.3);
+  
+  /* Transiciones */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
   /* Optimización de renderizado */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,47 +45,51 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background-color: #ffffff;
-  color: #333;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
   overflow-x: hidden;
 }
 
 /* Smooth scroll para toda la página */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Para que al navegar las secciones no queden cortadas por el navbar fijo */
 }
 
-/* Mejora la accesibilidad del scroll en navegadores */
+/* Accesibilidad del foco */
 :focus-visible {
-  outline: 2px solid #6c63ff;
+  outline: 2px solid var(--color-accent-blue);
   outline-offset: 3px;
 }
 
-/* Estilos de selección de texto */
+/* Selección de texto cibernética */
 ::selection {
-  background-color: #6c63ff;
-  color: white;
+  background-color: rgba(0, 242, 254, 0.3);
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 242, 254, 0.8);
 }
 
 ::-moz-selection {
-  background-color: #6c63ff;
-  color: white;
+  background-color: rgba(0, 242, 254, 0.3);
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 242, 254, 0.8);
 }
 
-/* Scrollbar personalizado (solo Chrome y Edge) */
+/* Scrollbar personalizado estilo cyber */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6c63ff;
-  border-radius: 5px;
+  background: linear-gradient(180deg, var(--color-accent-blue), var(--color-accent-purple));
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5549cc;
+  background: var(--color-accent-blue);
+  box-shadow: var(--glow-cyan);
 }
