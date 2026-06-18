@@ -16,8 +16,7 @@ function Footer() {
               Sebastian Ortega Auriol
             </h5>
             <p className='footer-description'>
-              Desarrollador Full Stack JavaScript especializado en crear
-              soluciones web escalables y eficientes.
+              Analista Programador y desarrollador Full Stack. Me dedico a crear aplicaciones web fluidas, modelar bases de datos y diseñar sistemas bien estructurados.
             </p>
             <div className='footer-social'>
               <a

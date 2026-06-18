@@ -17,48 +17,48 @@ function About() {
       date: "2004 - 2023",
       title: "Trayectoria en Fuerzas Armadas",
       subtitle: "Liderazgo, Gestión de Equipos y Operaciones Críticas",
-      description: "19 años de servicio activo en entornos de alta exigencia, forjando resiliencia, disciplina y toma de decisiones en situaciones críticas.",
+      description: "19 años de servicio activo en tareas de alta exigencia. Esta etapa definió mi capacidad de liderazgo, el trabajo en equipo y la toma de decisiones rápidas bajo presión.",
       details: [
-        "Liderazgo de personal bajo ambientes de alta presión.",
-        "Planificación estratégica, gestión logística y administración de prioridades.",
-        "Automatización de procesos en Excel para el inventario de bodega de pesticidas.",
-        "Valores de lealtad, adaptabilidad inmediata y estricta integridad de procesos."
+        "Liderazgo de equipos en entornos de alto estrés.",
+        "Planificación de tareas, logística y priorización de objetivos.",
+        "Creación de planillas automatizadas en Excel para gestionar inventarios.",
+        "Fuerte sentido de la adaptabilidad, lealtad y rigor en el cumplimiento de procesos."
       ]
     },
     {
       id: 2,
       date: "2023",
-      title: "Transición Estratégica a la Tecnología",
+      title: "Transición a la Tecnología",
       subtitle: "Bootcamp Full Stack JavaScript - Desafío Latam",
-      description: "Formación intensiva de más de 600 horas enfocada en el desarrollo ágil de aplicaciones utilizando el ecosistema moderno de JavaScript.",
+      description: "Bootcamp intensivo de más de 600 horas de programación práctica, centrado en el desarrollo de aplicaciones con JavaScript y frameworks modernos.",
       details: [
-        "Arquitectura frontend reactiva utilizando React.js y Bootstrap.",
-        "Modelamiento de bases de datos relacionales PostgreSQL y NoSQL MongoDB.",
-        "Construcción de APIs RESTful con Node.js y Express.js aplicando principios MVC."
+        "Diseño de vistas dinámicas utilizando React y Bootstrap.",
+        "Creación y manejo de bases de datos con PostgreSQL y MongoDB.",
+        "Desarrollo de servidores y APIs REST con Node.js y Express."
       ]
     },
     {
       id: 3,
       date: "2024 - Presente",
-      title: "Consolidación Académica e Ingeniería",
+      title: "Consolidación Académica",
       subtitle: "Analista Programador - INACAP",
-      description: "Profundización formal de conocimientos en ingeniería de software, arquitectura de sistemas y optimización algorítmica.",
+      description: "Formación formal en análisis de sistemas, patrones de diseño de software y optimización de código.",
       details: [
-        "Modelado de procesos con metodologías ágiles (Scrum) y DevOps.",
-        "Diseño e implementación de patrones de arquitectura (MVC, Clean Architecture).",
-        "Optimización de código enfocado en rendimiento, escalabilidad y buenas prácticas."
+        "Uso de metodologías ágiles (Scrum) y flujos de desarrollo.",
+        "Implementación de arquitecturas web organizadas y limpias.",
+        "Optimización de código buscando rendimiento y buenas prácticas."
       ]
     },
     {
       id: 4,
       date: "Presente",
-      title: "Desarrollador Full Stack",
-      subtitle: "Construcción de Soluciones Web de Alto Rendimiento",
-      description: "Desarrollo independiente de plataformas web y SaaS locales, integrando interfaces inmersivas y arquitecturas robustas.",
+      title: "Analista Programador | Perfil Full Stack",
+      subtitle: "Desarrollo y Construcción de Soluciones",
+      description: "Creación de aplicaciones web completas, desde el diseño de la base de datos hasta la interfaz del usuario final.",
       details: [
-        "Optimización web enfocada en métricas Lighthouse (Rendimiento y Accesibilidad >90%).",
-        "Maquetación premium utilizando animaciones fluidas y microinteracciones de interfaz.",
-        "Compromiso de entrega de código modular, testeado y mantenible."
+        "Modelado y estructuración de bases de datos relacionales y no relacionales.",
+        "Análisis de requerimientos de usuarios para traducirlos en flujos de software.",
+        "Desarrollo de servicios web e integraciones de sistemas bien estructurados."
       ]
     }
   ];
@@ -94,7 +94,7 @@ function About() {
         <div className='row'>
           {/* Título de sección */}
           <div className='col-12 text-center mb-5'>
-            <motion.h2 
+            <motion.h2
               className='section-title'
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -110,23 +110,19 @@ function About() {
         <div className='row justify-content-center'>
           <div className='col-lg-10'>
             {/* Card Biografía Principal */}
-            <motion.div 
+            <motion.div
               className='about-content mb-5'
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className='mb-4 text-highlight fw-bold'>Desarrollador Full Stack | Analista Programador</h3>
+              <h3 className='mb-4 text-highlight fw-bold'>Analista Programador | Perfil Full Stack</h3>
               <p className='lead mb-4'>
-                Desarrollador Full Stack con una trayectoria única. Cuento con <strong>19 años de experiencia</strong> en entornos 
-                de alta exigencia en las Fuerzas Armadas, lo que me ha provisto de disciplina intachable, capacidad resolutiva 
-                y ejecución impecable bajo presión extrema.
+                Soy analista programador y desarrollador Full Stack. Tras <strong>19 años de servicio activo</strong> en las Fuerzas Armadas, decidí volcar mi carrera a la tecnología, aportando una sólida capacidad de análisis, autodisciplina y una mentalidad resolutiva habituada a trabajar bajo alta presión.
               </p>
               <p className='mb-4'>
-                En el 2023, consolidé mi transición hacia la industria del software. Me especializo en estructurar 
-                arquitecturas web escalables y modulares. Aplico metodologías de ingeniería limpias y eficientes 
-                para asegurar la mantenibilidad a largo plazo del código.
+                En 2023 di el salto formal al desarrollo de software. Más allá de estructurar interfaces web, me apasiona involucrarme en todo el ciclo del proyecto: desde comprender las necesidades reales del negocio y modelar bases de datos robustas, hasta construir arquitecturas limpias y escalables fáciles de mantener en el tiempo.
               </p>
 
               {/* Información Destacada */}
@@ -134,7 +130,7 @@ function About() {
                 <div className='col-md-6'>
                   <div className='about-info-item'>
                     <i className='fas fa-laptop-code text-info me-2'></i>
-                    <strong>Especialización:</strong> Full Stack (React / Node / Python)
+                    <strong>Especialización:</strong> Análisis de Sistemas & Full Stack (React / Node)
                   </div>
                 </div>
                 <div className='col-md-6'>
@@ -158,7 +154,7 @@ function About() {
               </div>
 
               {/* Botón de descarga de CV */}
-              <motion.div 
+              <motion.div
                 className='text-center text-md-start'
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -185,8 +181,8 @@ function About() {
             {/* Línea de Tiempo Interactiva */}
             <div className='experience-timeline'>
               {timelineData.map((item, index) => (
-                <motion.div 
-                  className='timeline-item' 
+                <motion.div
+                  className='timeline-item'
                   key={item.id}
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -197,7 +193,7 @@ function About() {
                   <div className='timeline-marker'></div>
 
                   {/* Tarjeta de la línea de tiempo */}
-                  <div 
+                  <div
                     className={`timeline-card cursor-pointer ${activeTimeline === item.id ? "active-card" : ""}`}
                     onClick={() => toggleTimeline(item.id)}
                     style={{ cursor: "pointer" }}
@@ -210,8 +206,8 @@ function About() {
                     {/* Contenido Expandible Animado con Framer Motion */}
                     <motion.div
                       initial={{ height: 0, opacity: 0, marginTop: 0 }}
-                      animate={{ 
-                        height: activeTimeline === item.id ? "auto" : 0, 
+                      animate={{
+                        height: activeTimeline === item.id ? "auto" : 0,
                         opacity: activeTimeline === item.id ? 1 : 0,
                         marginTop: activeTimeline === item.id ? 15 : 0
                       }}

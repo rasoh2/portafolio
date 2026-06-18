@@ -27,14 +27,14 @@ function Skills() {
       { name: "API RESTful", level: 70, icon: "fas fa-plug", color: "#FF6C37" },
     ],
     tools: [
+      { name: "Análisis y Diseño", level: 75, icon: "fas fa-project-diagram", color: "#17A2B8" },
+      { name: "Modelamiento DB (UML, DER)", level: 70, icon: "fas fa-database", color: "#FFC107" },
+      { name: "Metodologías Ágiles (Scrum)", level: 75, icon: "fas fa-tasks", color: "#6C63FF" },
       { name: "Git / GitHub", level: 75, icon: "fab fa-git-alt", color: "#F05032" },
-      { name: "VS Code", level: 80, icon: "fas fa-code", color: "#007ACC" },
-      { name: "Windows Server", level: 60, icon: "fab fa-windows", color: "#0078D6" },
-      { name: "Jira / Confluence", level: 55, icon: "fab fa-jira", color: "#0052CC" },
-      { name: "Metodologías Ágiles (Scrum)", level: 70, icon: "fas fa-tasks", color: "#6C63FF" },
-      { name: "Google Antigravity", level: 75, icon: "fas fa-robot", color: "#4285F4" },
+      { name: "Jira / Confluence", level: 60, icon: "fab fa-jira", color: "#0052CC" },
+      { name: "Windows & Linux Server", level: 65, icon: "fab fa-windows", color: "#0078D6" },
       { name: "Prompt Engineering", level: 70, icon: "fas fa-terminal", color: "#10B981" },
-      { name: "Linux / Terminal", level: 60, icon: "fab fa-linux", color: "#FCC624" },
+      { name: "Google Antigravity", level: 75, icon: "fas fa-robot", color: "#4285F4" },
     ],
   };
 
@@ -58,7 +58,7 @@ function Skills() {
             </motion.h2>
             <div className='section-divider'></div>
             <p className='section-description mt-3'>
-              Tecnologías y herramientas con las que construyo soluciones web robustas y escalables
+              Tecnologías y herramientas que utilizo para desarrollar aplicaciones web estables y eficientes
             </p>
           </div>
         </div>
@@ -141,8 +141,8 @@ function Skills() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h3 className='category-title'>
-                <i className='fas fa-tools me-2'></i>
-                Herramientas
+                <i className='fas fa-project-diagram me-2'></i>
+                Análisis & Herramientas
               </h3>
               <div className='skills-grid-container'>
                 {skillsData.tools.map((skill, index) => (

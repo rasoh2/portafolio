@@ -224,6 +224,17 @@ a {
   pointer-events: none;
 }
 
+/* Canvas de la Galaxia interactiva */
+.hero-galaxy-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
 /* Reflector spotlight que sigue al cursor */
 .hero-mouse-spotlight {
   position: absolute;
@@ -553,6 +564,19 @@ a {
 .timeline-desc {
   font-size: 0.92rem;
   margin-bottom: 0;
+}
+
+/* Legibilidad y Contraste de la Línea de Tiempo y textos secundarios */
+.text-muted {
+  color: #a0aec0 !important; /* Gris claro de alta legibilidad en fondo oscuro */
+}
+
+.timeline-details-list li {
+  color: #e2e8f0 !important; /* Texto claro y limpio para los logros profesionales */
+}
+
+.timeline-card .text-muted {
+  color: #a0aec0 !important;
 }
 
 /* ========================================

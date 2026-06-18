@@ -25,7 +25,7 @@ function Projects() {
       title: "AlkeWallet",
       category: "Full-Stack",
       description:
-        "Billetera digital full-stack. Desarrollada con Express.js bajo el patrón MVC asegurando una arquitectura backend escalable. En el frontend se utilizó jQuery y Bootstrap para agilizar la manipulación directa del DOM y maquetar interfaces responsivas.",
+        "Billetera digital completa. Construí el backend con Node.js y Express usando arquitectura MVC para ordenar la lógica de negocio y las consultas. Para la interfaz usé jQuery y Bootstrap, logrando vistas dinámicas y adaptables a móviles de forma rápida.",
       image: proyecto1,
       technologies: ["jQuery", "Bootstrap", "Express.js", "Node.js", "PostgreSQL"],
       demoUrl: "https://alke-wallet-front.netlify.app/",
@@ -37,7 +37,7 @@ function Projects() {
       title: "Contador con Vue.js",
       category: "Vue.js",
       description:
-        "Sistema reactivo para gestión de listas. Implementado con Vue.js para aprovechar su sistema de reactividad profunda (two-way binding), lo que simplificó la lógica de manipulación de arrays. Se integró Bootstrap para componer la UI de manera ágil.",
+        "Aplicación interactiva para administrar listas. Usé Vue.js para aprovechar su enlace de datos bidireccional y simplificar el manejo de las listas en tiempo real. La interfaz visual está estructurada de forma sencilla con componentes de Bootstrap.",
       image: proyecto2,
       technologies: ["Vue.js", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://contador1-vuejs.netlify.app/",
@@ -49,7 +49,7 @@ function Projects() {
       title: "PokéAPI Explorer",
       category: "React",
       description:
-        "Explorador interactivo multivariables que consume PokéAPI. Se construyó en React para manejar el complejo estado de las búsquedas y filtros dinámicos mediante una arquitectura orientada a componentes modulares, ofreciendo una experiencia veloz.",
+        "Buscador de Pokémon que consume la PokéAPI pública. Desarrollado en React organizando la interfaz en componentes independientes y modulares. Esto me permitió controlar de manera limpia los estados de búsqueda y filtros dinámicos.",
       image: proyecto3,
       technologies: ["React", "Bootstrap", "JavaScript", "REST API", "CSS"],
       demoUrl: "https://pokeapih2.netlify.app/",
@@ -61,7 +61,7 @@ function Projects() {
       title: "Web Chile Pro",
       category: "React",
       description:
-        "Plataforma SaaS para cotizaciones dinámicas. Se decidió por React para resolver la necesidad de cálculos automáticos en tiempo real y manejo de formularios enriquecidos mediante estados complejos. La capa de presentación es responsiva.",
+        "Herramienta web para generar cotizaciones al instante. Elegí React para procesar cálculos matemáticos en vivo y controlar formularios dinámicos a través de estados reactivos. Cuenta con un diseño totalmente responsivo.",
       image: proyecto4,
       technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
       demoUrl: "https://webchilepro.netlify.app/",
@@ -73,7 +73,7 @@ function Projects() {
       title: "To-Do List App",
       category: "React",
       description:
-        "Gestor de tareas avanzado con funcionalidades CRUD. Desarrollado con React haciendo uso intensivo de Hooks para manejar el ciclo de vida, estado global temporal y persistencia de datos local (localStorage).",
+        "Organizador de tareas diarias con soporte CRUD (crear, leer, actualizar, borrar). Creado en React con hooks para el manejo de estados locales y almacenamiento persistente directamente en el navegador del usuario a través de localStorage.",
       image: proyecto5,
       technologies: ["React", "Bootstrap", "JavaScript", "CSS", "HTML"],
       demoUrl: "https://to-do-list-pro3.netlify.app/",
@@ -85,7 +85,7 @@ function Projects() {
       title: "MasterEasy Landing Page",
       category: "React",
       description:
-        "Landing page corporativa orientada a la conversión de leads (servicios industriales). Arquitecturada con React para abstraer secciones de la página como componentes independientes. Se aplicaron estilos modernos.",
+        "Página de aterrizaje institucional para una empresa de servicios industriales. Desarrollada con React dividiendo cada sección del sitio en componentes limpios y reutilizables. Incluye estilos modernos y transiciones fluidas.",
       image: proyecto6,
       technologies: ["HTML", "CSS", "JavaScript", "React", "AOS"],
       demoUrl: "https://mastereasy.netlify.app/",
@@ -120,7 +120,7 @@ function Projects() {
             </motion.h2>
             <div className='section-divider'></div>
             <p className='section-description mt-3'>
-              Una selección de mis desarrollos más representativos en frontend y backend
+              Algunos de mis trabajos más representativos tanto en frontend como en backend
             </p>
           </div>
         </div>

@@ -136,7 +136,7 @@ function Contact() {
             </motion.h2>
             <div className='section-divider'></div>
             <p className='section-description mt-3'>
-              ¿Buscas un desarrollador con alto sentido de ejecución? Conectemos.
+              Si buscas un analista programador comprometido, práctico y listo para trabajar en equipo, ponte en contacto conmigo.
             </p>
           </div>
         </div>
@@ -351,7 +351,7 @@ function Contact() {
                     >
                       <i className='fas fa-check-circle me-2' style={{ fontSize: "1.2rem" }}></i>
                       <div>
-                        <strong>¡Mensaje enviado con éxito!</strong> He recibido tu correo y me pondré en contacto contigo lo antes posible.
+                        <strong>¡Mensaje enviado!</strong> Gracias por escribir. Te responderé a la brevedad.
                       </div>
                     </motion.div>
                   )}
@@ -367,7 +367,7 @@ function Contact() {
                     >
                       <i className='fas fa-exclamation-circle me-2' style={{ fontSize: "1.2rem" }}></i>
                       <div>
-                        <strong>Error al enviar:</strong> {formStatus.errorMessage}. Por favor, vuelve a intentarlo o escríbeme directamente al email.
+                        <strong>Hubo un problema:</strong> {formStatus.errorMessage}. Por favor, vuelve a intentarlo o escríbeme directamente por correo.
                       </div>
                     </motion.div>
                   )}
