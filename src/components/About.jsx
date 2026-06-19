@@ -119,7 +119,7 @@ function About() {
             >
               <h3 className='mb-4 text-highlight fw-bold'>Analista Programador | Perfil Full Stack</h3>
               <p className='lead mb-4'>
-                Soy analista programador y desarrollador Full Stack. Tras <strong>19 años de servicio activo</strong> en las Fuerzas Armadas, decidí volcar mi carrera a la tecnología, aportando una sólida capacidad de análisis, autodisciplina y una mentalidad resolutiva habituada a trabajar bajo alta presión.
+                Soy analista programador y desarrollador Full Stack. Tras <strong>19 años de servicio activo</strong> en las Fuerzas Armadas, decidí volcar mi carrera a la tecnología, aportando una sólida capacidad de análisis, autodisciplina y una mentalidad resolutiva habituada a trabajar bajo presión.
               </p>
               <p className='mb-4'>
                 En 2023 di el salto formal al desarrollo de software. Más allá de estructurar interfaces web, me apasiona involucrarme en todo el ciclo del proyecto: desde comprender las necesidades reales del negocio y modelar bases de datos robustas, hasta construir arquitecturas limpias y escalables fáciles de mantener en el tiempo.
