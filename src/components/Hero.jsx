@@ -313,11 +313,6 @@ function Hero() {
               initial='hidden'
               animate='visible'
             >
-              {/* Saludo inicial */}
-              <motion.h4 className='hero-greeting' variants={itemVariants}>
-                👋 Hola, soy
-              </motion.h4>
-
               {/* Nombre completo con acento */}
               <motion.h1 className='hero-title' variants={itemVariants}>
                 Sebastian Ortega
