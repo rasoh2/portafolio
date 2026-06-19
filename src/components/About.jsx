@@ -14,7 +14,7 @@ function About() {
   const timelineData = [
     {
       id: 1,
-      date: "2004 - 2023",
+      date: "2005 - 2024",
       title: "Trayectoria en Fuerzas Armadas",
       subtitle: "Liderazgo, Gestión de Equipos y Operaciones Críticas",
       description: "19 años de servicio activo en tareas de alta exigencia. Esta etapa definió mi capacidad de liderazgo, el trabajo en equipo y la toma de decisiones rápidas bajo presión.",
@@ -27,7 +27,7 @@ function About() {
     },
     {
       id: 2,
-      date: "2023",
+      date: "2024",
       title: "Transición a la Tecnología",
       subtitle: "Bootcamp Full Stack JavaScript - Desafío Latam",
       description: "Bootcamp intensivo de más de 600 horas de programación práctica, centrado en el desarrollo de aplicaciones con JavaScript y frameworks modernos.",
@@ -39,7 +39,7 @@ function About() {
     },
     {
       id: 3,
-      date: "2024 - Presente",
+      date: "2025 - Presente",
       title: "Consolidación Académica",
       subtitle: "Analista Programador - INACAP",
       description: "Formación formal en análisis de sistemas, patrones de diseño de software y optimización de código.",
@@ -122,7 +122,7 @@ function About() {
                 Soy analista programador y desarrollador Full Stack. Tras <strong>19 años de servicio activo</strong> en las Fuerzas Armadas, decidí volcar mi carrera a la tecnología, aportando una sólida capacidad de análisis, autodisciplina y una mentalidad resolutiva habituada a trabajar bajo presión.
               </p>
               <p className='mb-4'>
-                En 2023 di el salto formal al desarrollo de software. Más allá de estructurar interfaces web, me apasiona involucrarme en todo el ciclo del proyecto: desde comprender las necesidades reales del negocio y modelar bases de datos robustas, hasta construir arquitecturas limpias y escalables fáciles de mantener en el tiempo.
+                En 2024 di el salto formal al desarrollo de software. Más allá de estructurar interfaces web, me apasiona involucrarme en todo el ciclo del proyecto: desde comprender las necesidades reales del negocio y modelar bases de datos robustas, hasta construir arquitecturas limpias y escalables fáciles de mantener en el tiempo.
               </p>
 
               {/* Información Destacada */}
