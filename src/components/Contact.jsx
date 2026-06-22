@@ -93,12 +93,12 @@ function Contact() {
     setFormStatus({ submitting: true, submitted: false, error: false, errorMessage: "" });
 
     try {
-      // Configuración de EmailJS (los IDs provistos en el código original)
+      // Configuración de EmailJS (los IDs obtenidos desde variables de entorno)
       await emailjs.send(
-        "service_ajdpxs8", 
-        "template_0uey8lt", 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
         formData,
-        "C8-WrHIIgWEB1FXae"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       setFormStatus({ submitting: false, submitted: true, error: false, errorMessage: "" });
       setFormData({ nombre: "", email: "", title: "", message: "" });

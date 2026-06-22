@@ -18,42 +18,49 @@ const statusMessages = [
  */
 function Preloader({ onComplete }) {
   const [progress, setProgress] = useState(0);
-  const [messageIndex, setMessageIndex] = useState(0);
 
-  // Simulación del progreso de carga
+  // Simulación del progreso de carga con aceleración al terminar la carga real de recursos
   useEffect(() => {
-    const duration = 2000; // Duración total en ms
-    const intervalTime = 30;
-    const steps = duration / intervalTime;
-    let currentStep = 0;
+    let isLoaded = document.readyState === "complete";
+
+    const handleLoad = () => {
+      isLoaded = true;
+    };
+
+    if (!isLoaded) {
+      window.addEventListener("load", handleLoad);
+    }
+
+    const intervalTime = 25;
+    let currentProgress = 0;
 
     const timer = setInterval(() => {
-      currentStep++;
-      const nextProgress = Math.min(Math.floor((currentStep / steps) * 100), 100);
-      setProgress(nextProgress);
+      // Si la página ya cargó, avanzamos rápido (12% por tick) para no penalizar la UX.
+      // Si no ha terminado, subimos a ritmo constante (2% por tick) como fallback visual.
+      const step = isLoaded ? 12 : 2;
+      currentProgress = Math.min(currentProgress + step, 100);
+      setProgress(currentProgress);
 
-      if (nextProgress >= 100) {
+      if (currentProgress >= 100) {
         clearInterval(timer);
         setTimeout(() => {
           onComplete();
-        }, 300); // Pequeña pausa antes de ocultar
+        }, 150); // Pausa reducida para transicionar antes
       }
     }, intervalTime);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("load", handleLoad);
+    };
   }, [onComplete]);
 
-  // Rotar mensajes de estado basado en el progreso
-  useEffect(() => {
-    const totalMessages = statusMessages.length;
-    const targetIndex = Math.min(
-      Math.floor((progress / 100) * totalMessages),
-      totalMessages - 1
-    );
-    if (targetIndex !== messageIndex) {
-      setMessageIndex(targetIndex);
-    }
-  }, [progress, messageIndex]);
+  // Derivamos el messageIndex directamente en tiempo de renderizado para evitar efectos de renderizado en cascada
+  const totalMessages = statusMessages.length;
+  const messageIndex = Math.min(
+    Math.floor((progress / 100) * totalMessages),
+    totalMessages - 1
+  );
 
   return (
     <motion.div

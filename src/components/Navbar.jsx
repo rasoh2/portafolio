@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+const NAV_LINKS = [
+  { label: "Inicio", href: "#home" },
+  { label: "Sobre Mí", href: "#about" },
+  { label: "Proyectos", href: "#projects" },
+  { label: "Habilidades", href: "#skills" },
+  { label: "Contacto", href: "#contact" }
+];
+
 /**
  * Componente Navbar - Barra de navegación principal
  * - Responsivo con menú hamburguesa en móvil
@@ -56,26 +64,23 @@ function Navbar() {
         {/* Links de navegación */}
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id='navbarNav'>
           <ul className='navbar-nav ms-auto'>
-            {["Inicio", "Sobre Mí", "Proyectos", "Habilidades", "Contacto"].map((tab, idx) => {
-              const hrefs = ["#home", "#about", "#projects", "#skills", "#contact"];
-              return (
-                <motion.li 
-                  className='nav-item' 
-                  key={tab}
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 * idx, duration: 0.4 }}
+            {NAV_LINKS.map((link, idx) => (
+              <motion.li 
+                className='nav-item' 
+                key={link.label}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * idx, duration: 0.4 }}
+              >
+                <a 
+                  className='nav-link text-capitalize' 
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
                 >
-                  <a 
-                    className='nav-link text-capitalize' 
-                    href={hrefs[idx]}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {tab}
-                  </a>
-                </motion.li>
-              );
-            })}
+                  {link.label}
+                </a>
+              </motion.li>
+            ))}
           </ul>
         </div>
       </div>

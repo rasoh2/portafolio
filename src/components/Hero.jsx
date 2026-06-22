@@ -179,18 +179,12 @@ function Hero() {
         p.x += p.vx;
         p.y += p.vy;
 
-        // 6. Dibujar punto definido con brillo de alta fidelidad
+        // 6. Dibujar punto definido de forma rápida y optimizada (sin shadowBlur que ralentiza la CPU)
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fillStyle = p.color;
-
-        ctx.shadowBlur = p.glow;
-        ctx.shadowColor = p.color;
         ctx.fill();
       });
-
-      // Resetear shadowBlur para optimizar llamadas del navegador
-      ctx.shadowBlur = 0;
 
       animationFrameId = requestAnimationFrame(render);
     };

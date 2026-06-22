@@ -6,37 +6,44 @@ import { motion } from "framer-motion";
  * - Sin porcentajes numéricos de dominio (reemplazados por descriptores cualitativos: Avanzado, Intermedio, Familiarizado).
  * - Animación progresiva de barras al entrar en el viewport con Framer Motion.
  */
+const SKILLS_DATA = {
+  frontend: [
+    { name: "HTML5 / CSS3", level: 75, icon: "fab fa-html5", color: "#E34F26" },
+    { name: "Bootstrap / Tailwind", level: 75, icon: "fab fa-css3-alt", color: "#1572B6" },
+    { name: "JavaScript (ES6+)", level: 70, icon: "fab fa-js", color: "#F7DF1E" },
+    { name: "React.js", level: 65, icon: "fab fa-react", color: "#00f2fe" },
+    { name: "Vue.js", level: 50, icon: "fab fa-vuejs", color: "#4FC08D" },
+    { name: "Responsive Design", level: 70, icon: "fas fa-mobile-alt", color: "#8a2be2" },
+  ],
+  backend: [
+    { name: "Node.js", level: 60, icon: "fab fa-node", color: "#339933" },
+    { name: "Express.js", level: 60, icon: "fas fa-server", color: "#8a2be2" },
+    { name: "Python", level: 50, icon: "fab fa-python", color: "#3776AB" },
+    { name: "PostgreSQL", level: 65, icon: "fas fa-database", color: "#4479A1" },
+    { name: "MongoDB", level: 50, icon: "fas fa-leaf", color: "#47A248" },
+    { name: "Oracle SQL / MySQL", level: 60, icon: "fas fa-database", color: "#00758F" },
+    { name: "AWS", level: 60, icon: "fab fa-aws", color: "#FF9900" },
+    { name: "API RESTful", level: 70, icon: "fas fa-plug", color: "#FF6C37" },
+  ],
+  tools: [
+    { name: "Análisis y Diseño", level: 75, icon: "fas fa-project-diagram", color: "#17A2B8" },
+    { name: "Modelamiento DB (UML, DER)", level: 70, icon: "fas fa-database", color: "#FFC107" },
+    { name: "Metodologías Ágiles (Scrum)", level: 75, icon: "fas fa-tasks", color: "#6C63FF" },
+    { name: "Git / GitHub", level: 75, icon: "fab fa-git-alt", color: "#F05032" },
+    { name: "Jira / Confluence", level: 60, icon: "fab fa-jira", color: "#0052CC" },
+    { name: "Windows & Linux Server", level: 65, icon: "fab fa-windows", color: "#0078D6" },
+    { name: "Prompt Engineering", level: 70, icon: "fas fa-terminal", color: "#10B981" },
+    { name: "Google Antigravity", level: 75, icon: "fas fa-robot", color: "#4285F4" },
+  ],
+};
+
+/**
+ * Componente Skills - Sección de habilidades técnicas
+ * - Organizado por Frontend, Backend y Herramientas/Metodologías.
+ * - Sin porcentajes numéricos de dominio (reemplazados por descriptores cualitativos: Avanzado, Intermedio, Familiarizado).
+ * - Animación progresiva de barras al entrar en el viewport con Framer Motion.
+ */
 function Skills() {
-  const skillsData = {
-    frontend: [
-      { name: "HTML5 / CSS3", level: 75, icon: "fab fa-html5", color: "#E34F26" },
-      { name: "Bootstrap / Tailwind", level: 75, icon: "fab fa-css3-alt", color: "#1572B6" },
-      { name: "JavaScript (ES6+)", level: 70, icon: "fab fa-js", color: "#F7DF1E" },
-      { name: "React.js", level: 65, icon: "fab fa-react", color: "#00f2fe" },
-      { name: "Vue.js", level: 50, icon: "fab fa-vuejs", color: "#4FC08D" },
-      { name: "Responsive Design", level: 70, icon: "fas fa-mobile-alt", color: "#8a2be2" },
-    ],
-    backend: [
-      { name: "Node.js", level: 60, icon: "fab fa-node", color: "#339933" },
-      { name: "Express.js", level: 60, icon: "fas fa-server", color: "#8a2be2" },
-      { name: "Python", level: 50, icon: "fab fa-python", color: "#3776AB" },
-      { name: "PostgreSQL", level: 65, icon: "fas fa-database", color: "#4479A1" },
-      { name: "MongoDB", level: 50, icon: "fas fa-leaf", color: "#47A248" },
-      { name: "Oracle SQL / MySQL", level: 60, icon: "fas fa-database", color: "#00758F" },
-      { name: "AWS", level: 60, icon: "fab fa-aws", color: "#FF9900" },
-      { name: "API RESTful", level: 70, icon: "fas fa-plug", color: "#FF6C37" },
-    ],
-    tools: [
-      { name: "Análisis y Diseño", level: 75, icon: "fas fa-project-diagram", color: "#17A2B8" },
-      { name: "Modelamiento DB (UML, DER)", level: 70, icon: "fas fa-database", color: "#FFC107" },
-      { name: "Metodologías Ágiles (Scrum)", level: 75, icon: "fas fa-tasks", color: "#6C63FF" },
-      { name: "Git / GitHub", level: 75, icon: "fab fa-git-alt", color: "#F05032" },
-      { name: "Jira / Confluence", level: 60, icon: "fab fa-jira", color: "#0052CC" },
-      { name: "Windows & Linux Server", level: 65, icon: "fab fa-windows", color: "#0078D6" },
-      { name: "Prompt Engineering", level: 70, icon: "fas fa-terminal", color: "#10B981" },
-      { name: "Google Antigravity", level: 75, icon: "fas fa-robot", color: "#4285F4" },
-    ],
-  };
 
   // Dominio técnico de herramientas y frameworks sin porcentajes o etiquetas restrictivas
 
@@ -79,7 +86,7 @@ function Skills() {
                 Frontend Dev
               </h3>
               <div className='skills-grid-container'>
-                {skillsData.frontend.map((skill, index) => (
+                {SKILLS_DATA.frontend.map((skill, index) => (
                   <motion.div 
                     key={index} 
                     className='skill-badge-card'
@@ -112,7 +119,7 @@ function Skills() {
                 Backend Dev
               </h3>
               <div className='skills-grid-container'>
-                {skillsData.backend.map((skill, index) => (
+                {SKILLS_DATA.backend.map((skill, index) => (
                   <motion.div 
                     key={index} 
                     className='skill-badge-card'
@@ -145,7 +152,7 @@ function Skills() {
                 Análisis & Herramientas
               </h3>
               <div className='skills-grid-container'>
-                {skillsData.tools.map((skill, index) => (
+                {SKILLS_DATA.tools.map((skill, index) => (
                   <motion.div 
                     key={index} 
                     className='skill-badge-card'

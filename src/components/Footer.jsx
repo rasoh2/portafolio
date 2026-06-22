@@ -1,9 +1,10 @@
+const CURRENT_YEAR = new Date().getFullYear();
+
 /**
  * Componente Footer - Pie de página del portafolio
  * Incluye links de navegación, redes sociales y copyright
  */
 function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className='footer py-5'>
@@ -108,7 +109,7 @@ function Footer() {
           <div className='col-12'>
             <div className='footer-bottom text-center'>
               <p className='mb-0'>
-                &copy; {currentYear} <strong>Sebastian Ortega Auriol</strong>.
+                &copy; {CURRENT_YEAR} <strong>Sebastian Ortega Auriol</strong>.
                 Todos los derechos reservados.
               </p>
             </div>
