@@ -1,0 +1,122 @@
+.contact-section {
+  background: var(--bg-primary);
+}
+
+.contact-info {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 2.5rem;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 242, 254, 0.05);
+  border: 1px solid rgba(0, 242, 254, 0.15);
+  color: var(--color-accent-blue);
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: var(--glow-cyan);
+}
+
+.contact-icon i {
+  font-size: 1.1rem;
+}
+
+.contact-details h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.contact-details a,
+.contact-details p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.contact-details a:hover {
+  color: var(--color-accent-blue);
+}
+
+.contact-social .social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-social .social-link {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  border-radius: 50%;
+  transition: var(--transition-smooth);
+}
+
+.contact-social .social-link:hover {
+  color: var(--color-accent-blue);
+  border-color: var(--color-accent-blue);
+  box-shadow: var(--glow-cyan);
+  background: rgba(0, 242, 254, 0.05);
+  transform: translateY(-3px);
+}
+
+.contact-form-wrapper {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.contact-form .form-control {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-main);
+  padding: 12px 18px;
+  border-radius: 12px;
+  transition: var(--transition-smooth);
+}
+
+.contact-form .form-control:focus {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: var(--color-accent-blue);
+  box-shadow: var(--glow-cyan);
+  color: #ffffff;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.contact-form .btn-primary {
+  background: var(--gradient-cyber);
+  border: none;
+  color: #000000;
+  font-weight: 600;
+  box-shadow: var(--glow-cyan);
+}
+
+.contact-form .btn-primary:hover {
+  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.35);
+  transform: translateY(-2px);
+}

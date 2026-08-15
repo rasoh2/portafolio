@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import "../styles/Hero.css";
 
 /**
  * Componente Hero - Sección principal de bienvenida

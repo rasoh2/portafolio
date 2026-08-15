@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import "../styles/Contact.css";
 
 /**
  * Componente Contact - Formulario de contacto optimizado

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import "../styles/Navbar.css";
 
 const NAV_LINKS = [
   { label: "Inicio", href: "#home" },
@@ -52,8 +53,6 @@ function Navbar() {
           className='navbar-toggler'
           type='button'
           onClick={() => setIsOpen(!isOpen)}
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNav'
           aria-controls='navbarNav'
           aria-expanded={isOpen}
           aria-label='Toggle navigation'

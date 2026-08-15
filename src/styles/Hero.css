@@ -1,0 +1,219 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 242, 254, 0.12) 0%, transparent 40%);
+}
+
+/* Grid de fondo estilo cyber */
+.hero-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Canvas de la Galaxia interactiva */
+.hero-galaxy-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Reflector spotlight que sigue al cursor */
+.hero-mouse-spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.12) 0%, rgba(138, 43, 226, 0.08) 45%, transparent 70%);
+  pointer-events: none;
+  z-index: 2;
+  mix-blend-mode: screen;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-greeting {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  text-shadow: var(--glow-cyan);
+}
+
+.hero-title {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.text-highlight {
+  background: var(--gradient-cyber);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  max-width: 680px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.hero-buttons .btn-primary {
+  background: var(--gradient-cyber);
+  border: none;
+  color: #000000;
+  box-shadow: var(--glow-cyan);
+}
+
+.hero-buttons .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 242, 254, 0.4);
+}
+
+.hero-buttons .btn-outline-primary {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.hero-buttons .btn-outline-primary:hover {
+  border-color: var(--color-accent-purple);
+  background: rgba(138, 43, 226, 0.1);
+  box-shadow: var(--glow-purple);
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.hero-social {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.hero-social .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 50%;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  transition: var(--transition-smooth);
+}
+
+.hero-social .social-link:hover {
+  color: var(--color-accent-blue);
+  border-color: var(--color-accent-blue);
+  box-shadow: var(--glow-cyan);
+  background: rgba(0, 242, 254, 0.05);
+  transform: translateY(-4px);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator a {
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  transition: var(--transition-smooth);
+  display: block;
+}
+
+.scroll-indicator a:hover {
+  color: var(--color-accent-blue);
+  text-shadow: var(--glow-cyan);
+}
+
+/* Formas decorativas animadas en el Hero */
+.hero-bg-shapes .shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.shape-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 242, 254, 0.12);
+  top: 15%;
+  left: -100px;
+}
+
+.shape-2 {
+  width: 500px;
+  height: 500px;
+  background: rgba(138, 43, 226, 0.12);
+  bottom: 5%;
+  right: -150px;
+}
+
+.shape-3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 0, 127, 0.08);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
