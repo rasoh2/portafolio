@@ -10,8 +10,7 @@ export const PROJECTS_DATA = [
     id: 1,
     title: "AlkeWallet",
     category: "Full-Stack",
-    description: `AlkeWallet
-Billetera digital completa. El backend está diseñado como una API RESTful robusta bajo el patrón MVC, construida con Node.js, Express y Sequelize ORM para interactuar con PostgreSQL, implementando transacciones financieras seguras (ACID) y control de concurrencia. La interfaz de usuario fue modernizada desde su versión legacy en jQuery a una Single Page Application (SPA) modular y altamente reactiva usando React, TypeScript y Vite, logrando una excelente experiencia de usuario, tipado estático y vistas responsivas optimizadas con Bootstrap 5.
+    description: `Billetera digital completa. El backend está diseñado como una API RESTful robusta bajo el patrón MVC, construida con Node.js, Express y Sequelize ORM para interactuar con PostgreSQL, implementando transacciones financieras seguras (ACID) y control de concurrencia. La interfaz de usuario fue modernizada desde su versión legacy en jQuery a una Single Page Application (SPA) modular y altamente reactiva usando React, TypeScript y Vite, logrando una excelente experiencia de usuario, tipado estático y vistas responsivas optimizadas con Bootstrap 5.
 
 Tecnologías Utilizadas (Stack Actualizado)
 Frontend: React 19, TypeScript, Vite, React Router DOM, Bootstrap 5, Axios, SweetAlert2.
