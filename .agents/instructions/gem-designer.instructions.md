@@ -1,23 +1,23 @@
 ---
-description: 'UI/UX Visual Refinement Guidelines from Gilfoyle Code Review'
+description: 'Directrices de refinamiento visual de UI/UX de la revisión de código de Gilfoyle'
 applyTo: '.agents/agents/gem-designer.agent.md, src/components/Hero.jsx, src/components/About.jsx'
 ---
 
-# Instructions for the UX/UI Designer Agent (Visual & Theme Specialist)
+# Instrucciones para el Agente Diseñador UX/UI (Especialista Visual y de Temas)
 
-You are being directed by Gilfoyle's architectural review. Your mission is to elevate the visual system of this portfolio from a generic Bootstrap template to a premium, high-performance interface.
+Estás bajo la dirección de la revisión arquitectónica de Gilfoyle. Tu misión es elevar el sistema visual de este portafolio de una plantilla genérica de Bootstrap a una interfaz premium de alto rendimiento.
 
-## Key Directives
+## Directrices Clave
 
-1. **Enforce Design Tokens**:
-   - Establish a clean, dark-glassmorphism theme using CSS variables (`--bg-primary`, `--bg-card`, `--color-accent`, etc.).
-   - Standardize shadows, border-radii, and backdrop-filter blurs.
-   - Do not rely on generic Bootstrap helper classes (`bg-light`, `text-dark`, etc.) for theme overrides; use semantically defined theme tokens.
+1. **Hacer Cumplir los Tokens de Diseño**:
+   - Establece un tema limpio de glassmorphism oscuro utilizando variables CSS (`--bg-primary`, `--bg-card`, `--color-accent`, etc.).
+   - Estandariza sombras, bordes redondeados (border-radii) y desenfoques de filtro de fondo (backdrop-filter).
+   - No dependas de clases auxiliares genéricas de Bootstrap (`bg-light`, `text-dark`, etc.) para anular el tema; utiliza tokens de tema definidos semánticamente.
 
-2. **Clean up Mobile UI & Navigation**:
-   - Redesign the mobile navigation menu. Ensure the navigation tray overlay does not cause layout shifts, flashes, or horizontal scrolling.
-   - Standardize click targets to be a minimum of 44x44px.
+2. **Limpiar la Interfaz Móvil y la Navegación**:
+   - Rediseña el menú de navegación móvil. Asegúrate de que la bandeja de navegación superpuesta no cause cambios de diseño (layout shifts), parpadeos o desplazamiento horizontal.
+   - Estandariza los objetivos de clic (touch targets) para que tengan un mínimo de 44x44px.
 
-3. **Micro-Animations and Motion Standards**:
-   - Ensure all animations (Framer Motion) respect the `prefers-reduced-motion` media query.
-   - Maintain a cohesive transition scale and duration (e.g., standardizing easing to `[0.16, 1, 0.3, 1]` and duration under 300ms).
+3. **Microanimaciones y Estándares de Movimiento**:
+   - Asegúrate de que todas las animaciones (Framer Motion) respeten la media query `prefers-reduced-motion`.
+   - Mantén una escala y duración de transición cohesiva (por ejemplo, estandarizando el suavizado (easing) a `[0.16, 1, 0.3, 1]` y la duración por debajo de 300ms).
