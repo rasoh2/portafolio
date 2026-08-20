@@ -10,15 +10,10 @@ export const PROJECTS_DATA = [
     id: 1,
     title: "AlkeWallet",
     category: "Full-Stack",
-    description: `Billetera digital completa. El backend está diseñado como una API RESTful robusta bajo el patrón MVC, construida con Node.js, Express y Sequelize ORM para interactuar con PostgreSQL, implementando transacciones financieras seguras (ACID) y control de concurrencia. La interfaz de usuario fue modernizada desde su versión legacy en jQuery a una Single Page Application (SPA) modular y altamente reactiva usando React, TypeScript y Vite, logrando una excelente experiencia de usuario, tipado estático y vistas responsivas optimizadas con Bootstrap 5.
-
-Tecnologías Utilizadas (Stack Actualizado)
-Frontend: React 19, TypeScript, Vite, React Router DOM, Bootstrap 5, Axios, SweetAlert2.
-Backend: Node.js, Express.js, Sequelize (ORM), JSON Web Tokens (JWT), bcrypt (seguridad).
-Base de Datos: PostgreSQL (Producción), SQLite (Entornos de prueba).
-Testing / QA: Jest, Supertest.`,
+    description:
+      "Billetera digital full-stack. Desarrollé una API REST con Node.js, Express y PostgreSQL para transacciones seguras, y modernicé el frontend con React y TypeScript para ofrecer una interfaz SPA responsiva, fluida y modular.",
     image: proyecto1,
-    technologies: ["React 19", "TypeScript", "Vite", "Express.js", "Sequelize", "PostgreSQL", "Jest"],
+    technologies: ["React", "TypeScript", "Express", "Sequelize", "PostgreSQL", "Node.js"],
     demoUrl: "https://alke-wallet-front.netlify.app/",
     repoUrl: "https://github.com/rasoh2/alke-wallet",
     featured: true,
