@@ -32,10 +32,10 @@ export const PROJECTS_DATA = [
   },
   {
     id: 3,
-    title: "PokéAPI Explorer",
+    title: "PokeAPI Explorer",
     category: "React",
     description:
-      "Buscador de Pokémon que consume la PokéAPI pública. Desarrollado en React organizando la interfaz en componentes independientes y modulares. Esto me permitió controlar de manera limpia los estados de búsqueda y filtros dinámicos.",
+      "Buscador de Pokémon que consume la PokeAPI pública. Desarrollado en React organizando la interfaz en componentes independientes y modulares. Esto me permitió controlar de manera limpia los estados de búsqueda y filtros dinámicos.",
     image: proyecto3,
     technologies: ["React", "Bootstrap", "JavaScript", "REST API", "CSS"],
     demoUrl: "https://pokeapih2.netlify.app/",
