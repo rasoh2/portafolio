@@ -27,7 +27,7 @@ export const PROJECTS_DATA = [
     technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
     demoUrl: "https://webchilepro.netlify.app/",
     repoUrl: "https://github.com/rasoh2/webChilePro",
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const PROJECTS_DATA = [
     technologies: ["React", "Bootstrap", "JavaScript", "REST API", "CSS"],
     demoUrl: "https://pokeapih2.netlify.app/",
     repoUrl: "https://github.com/rasoh2/PokeApi",
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
