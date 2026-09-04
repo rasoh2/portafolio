@@ -18,6 +18,18 @@ export const PROJECTS_DATA = [
     featured: true,
   },
   {
+    id: 1,
+    title: "AlkeWallet",
+    category: "Full-Stack",
+    description:
+      "Billetera digital full-stack. Desarrollé una API REST con Node.js, Express y PostgreSQL para transacciones seguras, y modernicé el frontend con React y TypeScript para ofrecer una interfaz SPA responsiva, fluida y modular.",
+    image: proyecto1,
+    technologies: ["React", "TypeScript", "Express", "Sequelize", "PostgreSQL", "Node.js"],
+    demoUrl: "https://alke-wallet-front.netlify.app/",
+    repoUrl: "https://github.com/rasoh2/alke-wallet",
+    featured: true,
+  },
+  {
     id: 4,
     title: "Web Chile Pro",
     category: "React",
@@ -52,18 +64,6 @@ export const PROJECTS_DATA = [
     demoUrl: "https://contador1-vuejs.netlify.app/",
     repoUrl: "https://github.com/rasoh2/first-proyect-vue",
     featured: false,
-  },
-  {
-    id: 1,
-    title: "AlkeWallet",
-    category: "Full-Stack",
-    description:
-      "Billetera digital full-stack. Desarrollé una API REST con Node.js, Express y PostgreSQL para transacciones seguras, y modernicé el frontend con React y TypeScript para ofrecer una interfaz SPA responsiva, fluida y modular.",
-    image: proyecto1,
-    technologies: ["React", "TypeScript", "Express", "Sequelize", "PostgreSQL", "Node.js"],
-    demoUrl: "https://alke-wallet-front.netlify.app/",
-    repoUrl: "https://github.com/rasoh2/alke-wallet",
-    featured: true,
   },
 ];
 
