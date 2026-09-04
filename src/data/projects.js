@@ -2,6 +2,7 @@ import proyecto1 from "../assets/proyecto1.png";
 import proyecto2 from "../assets/proyecto2.png";
 import proyecto3 from "../assets/proyecto3.png";
 import proyecto4 from "../assets/proyecto4.png";
+import proyecto5 from "../assets/proyecto5.png";
 
 export const PROJECTS_DATA = [
   {
@@ -50,6 +51,18 @@ export const PROJECTS_DATA = [
     technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
     demoUrl: "https://webchilepro.netlify.app/",
     repoUrl: "https://github.com/rasoh2/webChilePro",
+    featured: true,
+  },
+  {
+    id: 5,
+    title: "Mini CRM con IA Assistant",
+    category: "Full-Stack",
+    description:
+      "Sistema de seguimiento comercial full-stack con asistente de IA integrado (Google Gemini 3.1 Flash Lite) mediante Function Calling y RAG. Cuenta con autenticación JWT, sincronización en tiempo real vía WebSockets (Socket.io), métricas interactivas y convertidor de divisas.",
+    image: proyecto5,
+    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Gemini IA", "Socket.io", "JWT"],
+    demoUrl: "https://crm-ia-assistant.netlify.app/",
+    repoUrl: "https://github.com/rasoh2",
     featured: true,
   },
 ];
