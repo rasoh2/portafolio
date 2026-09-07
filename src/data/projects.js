@@ -1,5 +1,4 @@
 import proyecto1 from "../assets/proyecto1.png";
-import proyecto2 from "../assets/proyecto2.png";
 import proyecto3 from "../assets/proyecto3.png";
 import proyecto4 from "../assets/proyecto4.png";
 import proyecto5 from "../assets/proyecto5.png";
@@ -63,18 +62,6 @@ export const PROJECTS_DATA = [
     repoUrl: "https://github.com/rasoh2/PokeApi",
     featured: false,
   },
-  {
-    id: 2,
-    title: "Contador con Vue.js",
-    category: "Vue.js",
-    description:
-      "Aplicación interactiva para administrar listas. Usé Vue.js para aprovechar su enlace de datos bidireccional y simplificar el manejo de las listas en tiempo real. La interfaz visual está estructurada de forma sencilla con componentes de Bootstrap.",
-    image: proyecto2,
-    technologies: ["Vue.js", "Bootstrap", "JavaScript", "HTML", "CSS"],
-    demoUrl: "https://contador1-vuejs.netlify.app/",
-    repoUrl: "https://github.com/rasoh2/first-proyect-vue",
-    featured: false,
-  },
 ];
 
-export const FILTER_CATEGORIES = ["Todos", "React", "Vue.js", "Full-Stack"];
+export const FILTER_CATEGORIES = ["Todos", "React", "Full-Stack"];

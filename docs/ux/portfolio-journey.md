@@ -43,7 +43,7 @@ This journey map tracks the cognitive and emotional progression of a Tech Recrui
   - Highlight soft skills such as "Liderazgo de equipos" and "Trabajo bajo presión" alongside technical achievements.
 
 ### Stage 3: Technical Validation (Skills & Projects Section)
-* **What user is doing**: Filtering projects by stack (React, Vue, Full-Stack) and looking at tech badges.
+* **What user is doing**: Filtering projects by stack (React, Full-Stack) and looking at tech badges.
 * **What user is thinking**:
   - *"Does he actually write clean code? Where is the GitHub link?"*
   - *"Are these projects live, or just code snippets?"*
