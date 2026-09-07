@@ -10,9 +10,19 @@ export const PROJECTS_DATA = [
     title: "Mini CRM con IA Assistant",
     category: "Full-Stack",
     description:
-      "Sistema de seguimiento comercial full-stack con asistente de IA integrado (Google Gemini 3.1 Flash Lite) mediante Function Calling y RAG. Cuenta con autenticación JWT, sincronización en tiempo real vía WebSockets (Socket.io), métricas interactivas y convertidor de divisas.",
+      "Sistema de seguimiento comercial full-stack con motor de IA Multi-Proveedor de Alta Disponibilidad (Groq Cloud LPU + Google Gemini). Diseñé una arquitectura con Enrutamiento por Intención (Intent Routing) que reduce el consumo de tokens en un 70% e inferencia en tiempo real (<1s). Cuenta con sincronización instantánea vía WebSockets (Socket.io), autenticación JWT, ticker financiero multidivisas en vivo (USD, CLP, EUR, UF, BTC) y diseño Mobile-First 100% responsivo.",
     image: proyecto5,
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Gemini IA", "Socket.io", "JWT", "Docker"],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Groq IA",
+      "Gemini IA",
+      "Socket.io",
+      "JWT",
+      "Docker"
+    ],
     demoUrl: "https://crm-ia-assistant.netlify.app/",
     repoUrl: "https://github.com/rasoh2",
     featured: true,
