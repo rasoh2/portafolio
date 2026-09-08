@@ -52,15 +52,25 @@ export const PROJECTS_DATA = [
   },
   {
     id: 3,
-    title: "PokeAPI Explorer",
-    category: "React",
+    title: "PokéDex Ultimate & Meta Suite",
+    category: "Full-Stack",
     description:
-      "Buscador de Pokémon que consume la PokeAPI pública. Desarrollado en React organizando la interfaz en componentes independientes y modulares. Esto me permitió controlar de manera limpia los estados de búsqueda y filtros dinámicos.",
+      "Aplicación Fullstack profesional para análisis táctico y simulador de combates Pokémon. Cuenta con Team Builder persistente y matriz de cobertura táctica (18 tipos), dashboard de Meta Analytics mediante MongoDB Aggregations (% WinRate), Poké-Quiz con leaderboard upsert, arena animada con Framer Motion, PWA y resiliencia de backend con fallback automático a MongoMemoryServer.",
     image: proyecto3,
-    technologies: ["React", "Bootstrap", "JavaScript", "REST API", "CSS"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Vite",
+      "Framer Motion",
+      "PWA"
+    ],
     demoUrl: "https://pokeapih2.netlify.app/",
     repoUrl: "https://github.com/rasoh2/PokeApi",
-    featured: false,
+    featured: true,
   },
 ];
 
