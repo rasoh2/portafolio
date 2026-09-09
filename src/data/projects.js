@@ -39,23 +39,11 @@ export const PROJECTS_DATA = [
     featured: true,
   },
   {
-    id: 4,
-    title: "Web Chile Pro",
-    category: "React",
-    description:
-      "Herramienta web para generar cotizaciones al instante. Elegí React para procesar cálculos matemáticos en vivo y controlar formularios dinámicos a través de estados reactivos. Cuenta con un diseño totalmente responsivo.",
-    image: proyecto4,
-    technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
-    demoUrl: "https://webchilepro.netlify.app/",
-    repoUrl: "https://github.com/rasoh2/webChilePro",
-    featured: false,
-  },
-  {
     id: 3,
-    title: "PokéDex Ultimate & Meta Suite",
+    title: "PokéDex con Arena de Batalla & Analytics",
     category: "Full-Stack",
     description:
-      "Aplicación Fullstack profesional para análisis táctico y simulador de combates Pokémon. Cuenta con Team Builder persistente y matriz de cobertura táctica (18 tipos), dashboard de Meta Analytics mediante MongoDB Aggregations (% WinRate), Poké-Quiz con leaderboard upsert, arena animada con Framer Motion, PWA y resiliencia de backend con fallback automático a MongoMemoryServer.",
+      "Aplicación Fullstack profesional (Node.js + Express + MongoDB). Incluye Arena de Batalla táctica en tiempo real con motor de tipos y log de combates, Team Builder persistente con matriz táctica (18 tipos), Meta Analytics mediante agregaciones MongoDB (% WinRate, popularidad), Poké-Quiz con leaderboard en DB, Framer Motion, PWA y resiliencia de DB con fallback automático.",
     image: proyecto3,
     technologies: [
       "React",
@@ -71,6 +59,18 @@ export const PROJECTS_DATA = [
     demoUrl: "https://pokeapih2.netlify.app/",
     repoUrl: "https://github.com/rasoh2/PokeApi",
     featured: true,
+  },
+  {
+    id: 4,
+    title: "Web Chile Pro",
+    category: "React",
+    description:
+      "Herramienta web para generar cotizaciones al instante. Elegí React para procesar cálculos matemáticos en vivo y controlar formularios dinámicos a través de estados reactivos. Cuenta con un diseño totalmente responsivo.",
+    image: proyecto4,
+    technologies: ["React", "Bootstrap", "JavaScript", "HTML", "CSS"],
+    demoUrl: "https://webchilepro.netlify.app/",
+    repoUrl: "https://github.com/rasoh2/webChilePro",
+    featured: false,
   },
 ];
 
