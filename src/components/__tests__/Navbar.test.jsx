@@ -5,8 +5,9 @@ import Navbar from '../Navbar';
 describe('Navbar Component', () => {
   it('renders brand name', () => {
     render(<Navbar />);
-    expect(screen.getByText(/Sebastian Ortega Auriol/i)).toBeInTheDocument();
+    expect(screen.getByText(/Sebasti[aá]n Ortega Auriol/i)).toBeInTheDocument();
   });
+
 
   it('toggles mobile menu on button click', () => {
     render(<Navbar />);

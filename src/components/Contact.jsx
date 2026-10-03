@@ -137,7 +137,7 @@ function Contact() {
             </motion.h2>
             <div className='section-divider'></div>
             <p className='section-description mt-3'>
-              Si buscas un analista programador comprometido, práctico y listo para trabajar en equipo, ponte en contacto conmigo.
+              Disponible para práctica profesional de 360 horas. Si buscas un analista programador y desarrollador Full Stack con enfoque práctico, rigurosidad técnica y capacidad demostrada para trabajar en equipo, ¡hablemos!
             </p>
           </div>
         </div>
@@ -154,6 +154,17 @@ function Contact() {
             >
               <div>
                 <h3 className='mb-4 text-highlight fw-bold'>Información Directa</h3>
+
+                {/* Disponibilidad */}
+                <div className='contact-info-item mb-4'>
+                  <div className='contact-icon'>
+                    <i className='fas fa-user-check'></i>
+                  </div>
+                  <div className='contact-details'>
+                    <h5>Disponibilidad</h5>
+                    <p className='mb-0 text-info fw-semibold'>Práctica Profesional (360 hrs)</p>
+                  </div>
+                </div>
 
                 {/* Email */}
                 <div className='contact-info-item mb-4'>
@@ -175,7 +186,7 @@ function Contact() {
                   </div>
                   <div className='contact-details'>
                     <h5>Teléfono</h5>
-                    <a href='tel:+56966753705'>+56 9 667 53705</a>
+                    <a href='tel:+56966753705'>+56 9 6675 3705</a>
                   </div>
                 </div>
 
@@ -186,10 +197,11 @@ function Contact() {
                   </div>
                   <div className='contact-details'>
                     <h5>Ubicación</h5>
-                    <p>Santiago, Chile</p>
+                    <p>Santiago, Chile (Remoto / Híbrido)</p>
                   </div>
                 </div>
               </div>
+
 
               {/* Redes sociales */}
               <div className='contact-social mt-4'>

@@ -308,26 +308,32 @@ function Hero() {
               initial='hidden'
               animate='visible'
             >
+              {/* Badge de Disponibilidad Inmediata */}
+              <motion.div className='hero-badge-available' variants={itemVariants}>
+                <span className='status-dot'></span>
+                <span>Disponible para Práctica Profesional (360 hrs)</span>
+              </motion.div>
+
               {/* Nombre completo con acento */}
               <motion.h1 className='hero-title' variants={itemVariants}>
-                Sebastian Ortega
+                Sebastián Ortega Auriol
               </motion.h1>
 
               {/* Rol profesional con highlight */}
               <motion.h2 className='hero-subtitle' variants={itemVariants}>
-                Analista Programador | Perfil{" "}
+                Analista Programador & Perfil{" "}
                 <span className='text-highlight'>Full Stack</span>
               </motion.h2>
+
 
               {/* Descripción breve profesional */}
               <motion.p
                 className='hero-description mx-auto'
                 variants={itemVariants}
               >
-                Me enfoco en el diseño de arquitecturas de sistemas, modelado de bases
-                de datos y el desarrollo de aplicaciones web veloces. Aporto rigor analítico,
-                disciplina y un enfoque práctico para resolver desafíos complejos.
+                Me enfoco en el diseño de arquitecturas de sistemas, modelado de bases de datos y el desarrollo de software y aplicaciones web. Aporto analisis critico, disciplina y un enfoque práctico para resolver desafíos complejos.
               </motion.p>
+
 
               {/* Botones de acción con microinteracción magnética */}
               <motion.div
@@ -344,6 +350,16 @@ function Hero() {
                   Ver Proyectos
                 </motion.a>
                 <motion.a
+                  href='/cv_sebastian_Ortega.pdf'
+                  download='CV_Sebastian_Ortega.pdf'
+                  className='btn btn-outline-info btn-lg me-sm-3 mb-3 mb-sm-0'
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <i className='fas fa-file-pdf me-2'></i>
+                  Descargar CV
+                </motion.a>
+                <motion.a
                   href='#contact'
                   className='btn btn-outline-primary btn-lg mb-3 mb-sm-0'
                   whileHover={{ scale: 1.05 }}
@@ -353,6 +369,7 @@ function Hero() {
                   Contactar
                 </motion.a>
               </motion.div>
+
 
               {/* Enlaces sociales */}
               <motion.div

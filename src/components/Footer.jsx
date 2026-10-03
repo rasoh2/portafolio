@@ -19,8 +19,9 @@ function Footer() {
               Sebastian Ortega Auriol
             </h5>
             <p className='footer-description'>
-              Analista Programador y desarrollador Full Stack. Me dedico a crear aplicaciones web fluidas, modelar bases de datos y diseñar sistemas bien estructurados.
+              Analista Programador y Full Stack Developer especializado en aplicaciones modulares, dashboards empresariales y metodologías AI-Driven (SDD, Multi-Agente). 19 años de liderazgo y disciplina operativa.
             </p>
+
             <div className='footer-social'>
               <a
                 href='https://github.com/rasoh2'
@@ -71,13 +72,13 @@ function Footer() {
 
           {/* Columna 3: Servicios */}
           <div className='col-lg-3 col-md-6 mb-4 mb-lg-0'>
-            <h5 className='footer-title'>Servicios</h5>
+            <h5 className='footer-title'>Áreas Clave</h5>
             <ul className='footer-links'>
-              <li>Desarrollo Web</li>
-              <li>Aplicaciones React</li>
-              <li>API REST</li>
-              <li>Diseño Responsivo</li>
-              <li>Consultoría Técnica</li>
+              <li>Desarrollo Full Stack</li>
+              <li>React 19 & TypeScript</li>
+              <li>APIs REST & Node.js</li>
+              <li>PostgreSQL & Bases de Datos</li>
+              <li>AI-Driven Dev & Multi-Agente</li>
             </ul>
           </div>
 
@@ -93,7 +94,7 @@ function Footer() {
               </li>
               <li>
                 <i className='fas fa-phone me-2'></i>
-                <a href='tel:+56966753705'>+56 9 667 53705</a>
+                <a href='tel:+56966753705'>+56 9 6675 3705</a>
               </li>
               <li>
                 <i className='fas fa-map-marker-alt me-2'></i>
@@ -101,6 +102,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+
         </div>
 
         {/* Línea separadora */}

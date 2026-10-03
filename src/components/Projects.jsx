@@ -116,19 +116,32 @@ function Projects() {
                     </div>
                   </div>
 
-                  {/* Contenido de la tarjeta */}
-                  <div className='project-content d-flex flex-column flex-grow-1'>
-                    <h3 className='project-title'>{project.title}</h3>
-                    <p className='project-description flex-grow-1'>{project.description}</p>
+                    {/* Contenido de la tarjeta */}
+                    <div className='project-content d-flex flex-column flex-grow-1'>
+                      <h3 className='project-title'>{project.title}</h3>
+                      <p className='project-description flex-grow-1'>{project.description}</p>
 
-                    {/* Tags de tecnologías */}
-                    <div className='project-technologies mt-auto'>
-                      {project.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className='tech-tag'>
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
+                      {/* Logros y características destacadas */}
+                      {project.highlights && (
+                        <ul className='project-highlights list-unstyled my-2 ps-0'>
+                          {project.highlights.map((item, hIdx) => (
+                            <li key={hIdx} className='mb-1 d-flex align-items-start'>
+                              <i className='fas fa-check-circle text-info me-2 mt-1' style={{ fontSize: "0.75rem" }}></i>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+
+                      {/* Tags de tecnologías */}
+                      <div className='project-technologies mt-auto'>
+                        {project.technologies.map((tech, techIndex) => (
+                          <span key={techIndex} className='tech-tag'>
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
 
                     {/* Botones inferiores */}
                     <div className='project-actions mt-3 pt-2'>

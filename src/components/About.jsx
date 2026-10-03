@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { TIMELINE_DATA, TECHNOLOGIES_DATA } from "../data/about";
+import { TIMELINE_DATA, TECHNOLOGIES_DATA, CERTIFICATIONS_DATA } from "../data/about";
 import "../styles/About.css";
 
 /**
- * Componente About - Sección "Sobre Mí" con Línea de Tiempo Interactiva
- * - Muestra la biografía y una línea de tiempo interactiva (expandible al hacer clic).
- * - Resalta la transición de Sebastian de las Fuerzas Armadas (19 años de servicio) al desarrollo de software.
+ * Componente About - Sección "Sobre Mí" con Línea de Tiempo Interactiva y Certificaciones
+ * - Muestra la biografía del nuevo CV y disponibilidad para práctica profesional (360 hrs).
+ * - Línea de tiempo interactiva con hitos académicos y trayectoria en el Ejército de Chile.
+ * - Sección de Certificaciones oficiales (Google AI Essentials, Red Hat RH124, SENCE).
  * - Animado con Framer Motion (con viewport triggers).
  */
 function About() {
@@ -50,20 +51,41 @@ function About() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className='mb-4 text-highlight fw-bold'>Analista Programador | Perfil Full Stack</h3>
+              <div className='d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4'>
+                <h3 className='text-highlight fw-bold mb-0'>
+                  Analista Programador & Perfil Full Stack
+                </h3>
+                <span className='hero-badge-available mb-0' style={{ margin: 0, fontSize: "0.85rem", padding: "6px 16px" }}>
+                  <span className='status-dot'></span>
+                  Disponible para Práctica Profesional (360 hrs)
+                </span>
+              </div>
+
               <p className='lead mb-4'>
-                Soy analista programador y desarrollador Full Stack. Tras <strong>19 años de servicio activo</strong> en las Fuerzas Armadas, decidí volcar mi carrera a la tecnología, aportando una sólida capacidad de análisis, autodisciplina y una mentalidad resolutiva habituada a trabajar bajo presión.
+                Soy Analista Programador con perfil Full Stack, construyendo aplicaciones web, CRM y dashboards empresariales con bases de datos relacionales. Tengo 19 años de trayectoria en entornos de alta exigencia —Fuerzas Armadas y Salud Pública— que hoy aplico al desarrollo de software: disciplina, rigor en procesos críticos y foco en entregar valor real. Trabajo con metodologías actuales como Spec-Driven Development y orquestación de agentes de IA, integrándolas activamente en mi forma de construir soluciones.
               </p>
-              <p className='mb-4'>
-                En 2024 di el salto formal al desarrollo de software. Más allá de estructurar interfaces web, me apasiona involucrarme en todo el ciclo del proyecto: desde comprender las necesidades reales del negocio y modelar bases de datos robustas, hasta construir arquitecturas limpias y escalables fáciles de mantener en el tiempo.
-              </p>
+
 
               {/* Información Destacada */}
               <div className='row mb-5 g-3'>
                 <div className='col-md-6'>
                   <div className='about-info-item'>
                     <i className='fas fa-laptop-code text-info me-2'></i>
-                    <strong>Especialización:</strong> Análisis de Sistemas & Full Stack (React / Node)
+                    <strong>Educación:</strong> Analista Programador (INACAP) | FullStack (Desafío Latam)
+                  </div>
+                </div>
+
+                <div className='col-md-6'>
+                  <div className='about-info-item'>
+                    <i className='fas fa-user-check text-info me-2'></i>
+                    <strong>Disponibilidad:</strong> Inmediata
+                  </div>
+                </div>
+                <div className='col-md-6'>
+                  <div className='about-info-item'>
+                    <i className='fas fa-graduation-cap text-info me-2'></i>
+                    <strong>Especialización:</strong> Full Stack (React 19, TS, Node, SQL) & AI-Driven Workflows
+
                   </div>
                 </div>
                 <div className='col-md-6'>
@@ -74,14 +96,14 @@ function About() {
                 </div>
                 <div className='col-md-6'>
                   <div className='about-info-item'>
-                    <i className='fas fa-graduation-cap text-info me-2'></i>
-                    <strong>Educación:</strong> Analista Programador (INACAP)
+                    <i className='fas fa-shield-alt text-info me-2'></i>
+                    <strong>Trayectoria Previa:</strong> 19 años Ejército (Liderazgo & Operaciones)
                   </div>
                 </div>
                 <div className='col-md-6'>
                   <div className='about-info-item'>
-                    <i className='fas fa-medal text-info me-2'></i>
-                    <strong>Background:</strong> 19 años FFAA (Resiliencia & Ejecución)
+                    <i className='fas fa-language text-info me-2'></i>
+                    <strong>Idiomas:</strong> Inglés Básico (Lectura de documentación técnica)
                   </div>
                 </div>
               </div>
@@ -93,20 +115,83 @@ function About() {
                 whileTap={{ scale: 0.98 }}
               >
                 <a
-                  href='/cv_sebastian_ortega.pdf'
+                  href='/cv_sebastian_Ortega.pdf'
                   className='btn btn-primary btn-lg px-4'
                   download='CV_Sebastian_Ortega.pdf'
                 >
                   <i className='fas fa-download me-2'></i>
-                  Descargar CV Profesional (PDF)
+                  Descargar CV (PDF)
                 </a>
               </motion.div>
             </motion.div>
 
+            {/* Subtítulo: Certificaciones Oficiales */}
+            <div className='text-center my-5'>
+              <h3 className='section-subtitle text-uppercase font-monospace text-info' style={{ fontSize: "1.5rem", letterSpacing: "2px" }}>
+                Certificaciones
+              </h3>
+              <p className='text-muted small mt-2 mb-3'>Credenciales técnicas en Inteligencia Artificial, Linux Enterprise y Metodologías Ágiles</p>
+              <motion.a
+                href='https://www.credly.com/users/sebastian.ortega'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn btn-outline-info btn-sm px-3 py-2 rounded-pill d-inline-flex align-items-center gap-2'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className='fas fa-certificate text-warning'></i>
+                <span>Ver Insignias Oficiales en Credly</span>
+                <i className='fas fa-external-link-alt small'></i>
+              </motion.a>
+            </div>
+
+            {/* Grid de Certificaciones */}
+            <div className='row g-4 mb-5'>
+              {CERTIFICATIONS_DATA.map((cert, index) => (
+                <div key={cert.id} className='col-lg-4 col-md-6'>
+                  <motion.div
+                    className='cert-card'
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                  >
+                    <div className='cert-header'>
+                      <div className='cert-icon'>
+                        <i className={cert.icon} style={{ color: cert.color }}></i>
+                      </div>
+                      <div>
+                        <h4 className='cert-title'>{cert.title}</h4>
+                        <span className='cert-year'>{cert.issuer} • {cert.year}</span>
+                      </div>
+                    </div>
+                    <div className='cert-meta'>
+                      <span className='cert-badge'>{cert.badge}</span>
+                    </div>
+                    <p className='cert-desc mb-3'>{cert.description}</p>
+                    {cert.verifyUrl && (
+                      <div className='mt-auto pt-3 border-top border-secondary-subtle d-flex align-items-center justify-content-between'>
+                        <a
+                          href={cert.verifyUrl}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='cert-verify-link'
+                        >
+                          Verificar Credencial <i className='fas fa-arrow-right ms-1' style={{ fontSize: "0.75rem" }}></i>
+                        </a>
+                        <i className='fas fa-shield-alt text-info opacity-75' title='Credencial Verificada'></i>
+                      </div>
+                    )}
+                  </motion.div>
+                </div>
+              ))}
+            </div>
+
+
             {/* Subtítulo: Trayectoria */}
             <div className='text-center my-5'>
               <h3 className='section-subtitle text-uppercase font-monospace text-info' style={{ fontSize: "1.5rem", letterSpacing: "2px" }}>
-                Trayectoria Profesional
+                Trayectoria Profesional & Educación
               </h3>
               <p className='text-muted small mt-2'>Haz clic en las tarjetas de la línea de tiempo para expandir logros clave</p>
             </div>
@@ -131,7 +216,10 @@ function About() {
                     onClick={() => toggleTimeline(item.id)}
                     style={{ cursor: "pointer" }}
                   >
-                    <span className='timeline-date'>{item.date}</span>
+                    <div className='d-flex align-items-center flex-wrap gap-2 mb-1'>
+                      <span className='timeline-date'>{item.date}</span>
+                      {item.type && <span className='timeline-type-badge'>{item.type}</span>}
+                    </div>
                     <h4 className='timeline-title'>{item.title}</h4>
                     <h5 className='timeline-subtitle'>{item.subtitle}</h5>
                     <p className='timeline-desc'>{item.description}</p>
@@ -200,3 +288,4 @@ function About() {
 }
 
 export default About;
+

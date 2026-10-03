@@ -156,3 +156,120 @@
 .timeline-card .text-muted {
   color: #a0aec0 !important;
 }
+
+.timeline-type-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background: rgba(138, 43, 226, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Certificaciones Oficiales */
+.cert-card {
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-cyber);
+  opacity: 0.8;
+}
+
+.cert-card:hover {
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(0, 242, 254, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3), var(--glow-cyan);
+}
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.cert-icon {
+  font-size: 1.8rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.cert-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: var(--text-main);
+}
+
+.cert-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.cert-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--color-accent-blue);
+  border: 1px solid rgba(0, 242, 254, 0.2);
+}
+
+.cert-year {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cert-desc {
+  font-size: 0.88rem;
+  color: #a0aec0;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.cert-verify-link {
+  color: var(--color-accent-blue);
+  font-size: 0.84rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.cert-verify-link:hover {
+  color: #ffffff;
+  text-shadow: var(--glow-cyan);
+  transform: translateX(3px);
+}
+
+

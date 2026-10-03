@@ -45,8 +45,9 @@ function Navbar() {
           whileTap={{ scale: 0.98 }}
         >
           <i className='fas fa-code me-2'></i>
-          Sebastian Ortega Auriol
+          Sebastián Ortega Auriol
         </motion.a>
+
 
         {/* Botón hamburguesa para móvil */}
         <button
