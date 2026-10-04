@@ -121,7 +121,7 @@ export const TECHNOLOGIES_DATA = [
   { name: "React 19", icon: "fab fa-react", color: "#00f2fe" },
   { name: "Vue.js", icon: "fab fa-vuejs", color: "#4FC08D" },
   { name: "Node.js", icon: "fab fa-node", color: "#339933" },
-  { name: "Express", icon: "fas fa-server", color: "#8a2be2" },
+  { name: "Express", icon: "fas fa-server", color: "#38bdf8" },
   { name: "PostgreSQL", icon: "fas fa-database", color: "#4479A1" },
   { name: "Oracle", icon: "fas fa-database", color: "#F80000" },
   { name: "MongoDB", icon: "fas fa-leaf", color: "#47A248" },

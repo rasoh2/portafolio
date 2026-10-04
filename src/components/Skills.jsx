@@ -109,14 +109,14 @@ function Skills() {
           <div className='col-lg-6 col-12'>
             <motion.div 
               className='skills-category'
-              style={{ borderLeft: "3px solid #8a2be2" }}
+              style={{ borderLeft: "3px solid #3b82f6" }}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
             >
               <h3 className='category-title'>
-                <i className='fas fa-server me-2' style={{ color: "#8a2be2" }}></i>
+                <i className='fas fa-server me-2' style={{ color: "#3b82f6" }}></i>
                 Backend & Bases de Datos
               </h3>
               <div className='skills-grid-container'>
@@ -143,14 +143,14 @@ function Skills() {
           <div className='col-lg-6 col-12'>
             <motion.div 
               className='skills-category'
-              style={{ borderLeft: "3px solid #ff007f" }}
+              style={{ borderLeft: "3px solid #6366f1" }}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h3 className='category-title'>
-                <i className='fas fa-tasks me-2' style={{ color: "#ff007f" }}></i>
+                <i className='fas fa-tasks me-2' style={{ color: "#6366f1" }}></i>
                 Herramientas & Metodologías
               </h3>
               <div className='skills-grid-container'>
@@ -158,7 +158,7 @@ function Skills() {
                   <motion.div 
                     key={index} 
                     className='skill-badge-card'
-                    whileHover={{ y: -5, boxShadow: "0 0 15px rgba(255, 0, 127, 0.4)", borderColor: "#ff007f" }}
+                    whileHover={{ y: -5, boxShadow: "0 0 15px rgba(99, 102, 241, 0.35)", borderColor: "#6366f1" }}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -208,29 +208,7 @@ function Skills() {
           </div>
         </div>
 
-        {/* Cifras de Impacto */}
-        <div className='row mt-5 pt-4 g-4'>
-          {[
-            { label: "Práctica Profesional", num: "360h", icon: "fas fa-user-clock" },
-            { label: "Trayectoria de Alta Exigencia", num: "19 Años", icon: "fas fa-history" },
-            { label: "Flujos IA & SDD", num: "Multi-Agente", icon: "fas fa-robot" },
-            { label: "Lectura Técnica", num: "Inglés Básico", icon: "fas fa-language" }
-          ].map((stat, index) => (
-            <div key={index} className='col-md-3 col-6'>
-              <motion.div 
-                className='stat-box text-center'
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-              >
-                <i className={`${stat.icon} stat-icon`}></i>
-                <h4 className='stat-number' style={{ fontSize: stat.num.length > 5 ? "1.9rem" : "2.6rem" }}>{stat.num}</h4>
-                <p className='stat-label'>{stat.label}</p>
-              </motion.div>
-            </div>
-          ))}
-        </div>
+
 
       </div>
     </section>

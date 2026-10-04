@@ -93,7 +93,7 @@ function Hero() {
     parent.addEventListener("mouseenter", handleMouseEnterGlobal);
     parent.addEventListener("mouseleave", handleMouseLeaveGlobal);
 
-    // Paleta de colores cibernética del portafolio
+    // Paleta cósmica original de la galaxia de estrellas
     const colors = ["#00f2fe", "#8a2be2", "#ff007f", "#00d2ff", "#b927fc"];
 
     // Aumentamos cantidad a 350 para llenar el espacio de la galaxia ensanchada
@@ -308,11 +308,6 @@ function Hero() {
               initial='hidden'
               animate='visible'
             >
-              {/* Badge de Disponibilidad Inmediata */}
-              <motion.div className='hero-badge-available' variants={itemVariants}>
-                <span className='status-dot'></span>
-                <span>Disponible para Práctica Profesional (360 hrs)</span>
-              </motion.div>
 
               {/* Nombre completo con acento */}
               <motion.h1 className='hero-title' variants={itemVariants}>

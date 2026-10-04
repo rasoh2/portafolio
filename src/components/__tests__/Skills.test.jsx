@@ -19,9 +19,9 @@ describe('Skills Component', () => {
     expect(screen.getByText(/Linux \(Red Hat RH124\)/i)).toBeInTheDocument();
   });
 
-  it('displays the 360h professional internship stat metric', () => {
+  it('renders key competencies section', () => {
     render(<Skills />);
-    expect(screen.getByText('360h')).toBeInTheDocument();
-    expect(screen.getByText(/Práctica Profesional/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Competencias Clave/i })).toBeInTheDocument();
+    expect(screen.getByText(/Liderazgo y Gestión/i)).toBeInTheDocument();
   });
 });

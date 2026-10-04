@@ -62,9 +62,8 @@ function About() {
               </div>
 
               <p className='lead mb-4'>
-                Soy Analista Programador con perfil Full Stack, construyendo aplicaciones web, CRM y dashboards empresariales con bases de datos relacionales. Tengo 19 años de trayectoria en entornos de alta exigencia —Fuerzas Armadas y Salud Pública— que hoy aplico al desarrollo de software: disciplina, rigor en procesos críticos y foco en entregar valor real. Trabajo con metodologías actuales como Spec-Driven Development y orquestación de agentes de IA, integrándolas activamente en mi forma de construir soluciones.
+                Analista Programador con perfil Full Stack, especializado en desarrollo de soluciones de software como CRM, dashboards empresariales y aplicaciones web. Trabajo con React, TypeScript, Node.js, Express, PostgreSQL y MongoDB, incluyendo APIs REST, autenticación y despliegue de aplicaciones. Integro metodologías actuales como Spec-Driven Development y orquestación de agentes de IA de forma activa en mi proceso de construcción de soluciones.
               </p>
-
 
               {/* Información Destacada */}
               <div className='row mb-5 g-3'>
@@ -97,32 +96,32 @@ function About() {
                 <div className='col-md-6'>
                   <div className='about-info-item'>
                     <i className='fas fa-shield-alt text-info me-2'></i>
-                    <strong>Trayectoria Previa:</strong> 19 años Ejército (Liderazgo & Operaciones)
+                    <strong>Trayectoria Previa:</strong> Liderazgo y Gestión Operativa (Entornos de alta exigencia)
                   </div>
                 </div>
                 <div className='col-md-6'>
                   <div className='about-info-item'>
                     <i className='fas fa-language text-info me-2'></i>
-                    <strong>Idiomas:</strong> Inglés Básico (Lectura de documentación técnica)
+                    <strong>Idiomas:</strong> Inglés Técnico (Lectura fluida de documentación)
                   </div>
                 </div>
               </div>
 
-              {/* Botón de descarga de CV */}
-              <motion.div
-                className='text-center text-md-start'
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <a
-                  href='/cv_sebastian_Ortega.pdf'
-                  className='btn btn-primary btn-lg px-4'
-                  download='CV_Sebastian_Ortega.pdf'
+                {/* Botón de descarga de CV */}
+                <motion.div
+                  className='text-center text-md-start'
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  <i className='fas fa-download me-2'></i>
-                  Descargar CV (PDF)
-                </a>
-              </motion.div>
+                  <a
+                    href='/cv_sebastian_Ortega.pdf'
+                    className='btn btn-primary btn-lg px-4'
+                    download='CV_Sebastian_Ortega.pdf'
+                  >
+                    <i className='fas fa-download me-2'></i>
+                    Descargar CV (PDF)
+                  </a>
+                </motion.div>
             </motion.div>
 
             {/* Subtítulo: Certificaciones Oficiales */}

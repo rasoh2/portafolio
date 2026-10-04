@@ -6,8 +6,8 @@
   overflow: hidden;
   background-color: var(--bg-primary);
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(0, 242, 254, 0.12) 0%, transparent 40%);
+    radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 210, 255, 0.10) 0%, transparent 40%);
 }
 
 /* Grid de fondo estilo cyber */
@@ -44,7 +44,7 @@
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 242, 254, 0.12) 0%, rgba(138, 43, 226, 0.08) 45%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 210, 255, 0.10) 0%, rgba(37, 99, 235, 0.08) 45%, transparent 70%);
   pointer-events: none;
   z-index: 2;
   mix-blend-mode: screen;
@@ -75,9 +75,9 @@
 .status-dot {
   width: 9px;
   height: 9px;
-  background-color: #00ff88;
+  background-color: #10b981;
   border-radius: 50%;
-  box-shadow: 0 0 10px #00ff88;
+  box-shadow: 0 0 10px #10b981;
   display: inline-block;
   animation: pulse-dot 2s infinite ease-in-out;
 }
@@ -85,15 +85,15 @@
 @keyframes pulse-dot {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
   }
   70% {
     transform: scale(1.15);
-    box-shadow: 0 0 0 8px rgba(0, 255, 136, 0);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
   }
   100% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
   }
 }
 
@@ -175,7 +175,7 @@
 
 .hero-buttons .btn-outline-primary:hover {
   border-color: var(--color-accent-purple);
-  background: rgba(138, 43, 226, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   box-shadow: var(--glow-purple);
   color: #ffffff;
   transform: translateY(-3px);

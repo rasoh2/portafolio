@@ -3,7 +3,7 @@ export const SKILLS_DATA = {
     { name: "Spec-Driven Development (SDD)", icon: "fas fa-brain", color: "#00ff88" },
     { name: "Orquestación Multi-Agente", icon: "fas fa-robot", color: "#00f2fe" },
     { name: "Prompt Engineering", icon: "fas fa-terminal", color: "#10B981" },
-    { name: "Agentic Workflows", icon: "fas fa-project-diagram", color: "#8a2be2" },
+    { name: "Agentic Workflows", icon: "fas fa-project-diagram", color: "#3b82f6" },
     { name: "Gemini API (RAG & Tools)", icon: "fab fa-google", color: "#4285F4" },
   ],
   frontend: [
@@ -17,7 +17,7 @@ export const SKILLS_DATA = {
   ],
   backend: [
     { name: "Node.js", icon: "fab fa-node", color: "#339933" },
-    { name: "Express.js", icon: "fas fa-server", color: "#8a2be2" },
+    { name: "Express.js", icon: "fas fa-server", color: "#38bdf8" },
     { name: "APIs RESTful", icon: "fas fa-plug", color: "#FF6C37" },
     { name: "PostgreSQL", icon: "fas fa-database", color: "#4479A1" },
     { name: "Oracle SQL", icon: "fas fa-database", color: "#F80000" },

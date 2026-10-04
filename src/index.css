@@ -13,23 +13,23 @@
   line-height: 1.6;
   font-weight: 400;
 
-  /* Colores del Sistema */
-  --bg-primary: #0a0c14;      /* Azul medianoche profundo */
-  --bg-secondary: #111422;    /* Gris carbón / Azul oscuro */
-  --bg-tertiary: #191d30;     /* Gris / Azul intermedio */
-  --text-main: #f3f4f6;       /* Blanco plateado */
-  --text-muted: #9ca3af;      /* Gris plata suave */
-  --color-accent-blue: #00f2fe; /* Cian / Azul Eléctrico */
-  --color-accent-purple: #8a2be2; /* Violeta Neón */
-  --color-accent-pink: #ff007f; /* Rosa Eléctrico para detalles */
+  /* Colores del Sistema - Paleta Corporate / Tech Enterprise */
+  --bg-primary: #0a0c16;        /* Azul medianoche profundo y sobrio */
+  --bg-secondary: #111528;      /* Zafiro carbón profundo */
+  --bg-tertiary: #171d36;       /* Azul pizarra intermedio */
+  --text-main: #f3f4f6;         /* Blanco plateado de alta legibilidad */
+  --text-muted: #94a3b8;        /* Gris pizarra suave */
+  --color-accent-blue: #00d2ff;   /* Cian tecnológico luminoso */
+  --color-accent-purple: #3b82f6; /* Azul Cobalto / Zafiro Profesional Enterprise */
+  --color-accent-pink: #10b981;   /* Verde Esmeralda / Mint para acentos de valor */
   
   /* Gradientes */
-  --gradient-cyber: linear-gradient(135deg, #00f2fe 0%, #8a2be2 100%);
-  --gradient-dark: linear-gradient(180deg, #0a0c14 0%, #111422 100%);
+  --gradient-cyber: linear-gradient(135deg, #00d2ff 0%, #2563eb 100%);
+  --gradient-dark: linear-gradient(180deg, #0a0c16 0%, #111528 100%);
   
-  /* Sombras */
-  --glow-cyan: 0 0 15px rgba(0, 242, 254, 0.3);
-  --glow-purple: 0 0 15px rgba(138, 43, 226, 0.3);
+  /* Sombras y Resplandores */
+  --glow-cyan: 0 0 15px rgba(0, 210, 255, 0.25);
+  --glow-purple: 0 0 15px rgba(59, 130, 246, 0.3);
   
   /* Transiciones */
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
