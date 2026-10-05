@@ -198,7 +198,7 @@ function About() {
 
             {/* Línea de Tiempo Interactiva */}
             <div className='experience-timeline'>
-              {(showAllTimeline ? TIMELINE_DATA : TIMELINE_DATA.slice(0, 2)).map((item, index) => (
+              {(showAllTimeline ? TIMELINE_DATA : TIMELINE_DATA.slice(0, 3)).map((item, index) => (
                 <motion.div
                   className='timeline-item'
                   key={item.id}
@@ -256,7 +256,7 @@ function About() {
             </div>
 
             {/* Botón de despliegue para ver más / menos trayectoria */}
-            {TIMELINE_DATA.length > 2 && (
+            {TIMELINE_DATA.length > 3 && (
               <div className='text-center mt-4 mb-2'>
                 <motion.button
                   type='button'
@@ -280,7 +280,7 @@ function About() {
                   <span>
                     {showAllTimeline
                       ? "Mostrar menos"
-                      : `Ver trayectoria completa (${TIMELINE_DATA.length - 2} más)`}
+                      : `Ver trayectoria completa (${TIMELINE_DATA.length - 3} más)`}
                   </span>
                 </motion.button>
               </div>

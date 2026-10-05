@@ -35,7 +35,7 @@ describe('About Component', () => {
     expect(screen.getAllByText(/Verificar Credencial/i).length).toBe(3);
   });
 
-  it('renders 2 initial timeline cards and the expand button', () => {
+  it('renders 3 initial timeline cards and the expand button', () => {
     render(<About />);
     expect(screen.getByText(/Ver trayectoria completa/i)).toBeInTheDocument();
   });
