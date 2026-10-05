@@ -60,7 +60,7 @@ export const PROJECTS_DATA = [
   },
   {
     id: 3,
-    title: "PokéDex Ultimate — Motor de Batalla Táctico & Meta Analytics",
+    title: "PokéDex — Motor de Batalla, Meta Analytics y más",
     category: "Full-Stack",
     description:
       "Sistema Full Stack de analítica y simulación táctica en tiempo real (Node.js + Express + MongoDB). Motor de batalla con cálculo de efectividad y log de combates, Team Builder persistente con matriz táctica para 18 tipos, agregaciones en MongoDB para análisis de Meta (% WinRate y popularidad) y arquitectura resiliente con fallback automático de base de datos.",
@@ -84,7 +84,7 @@ export const PROJECTS_DATA = [
     ],
     demoUrl: "https://pokeapih2.netlify.app/",
     repoUrl: "https://github.com/rasoh2/PokeApi",
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
