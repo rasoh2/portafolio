@@ -12,6 +12,7 @@ import "../styles/About.css";
  */
 function About() {
   const [activeTimeline, setActiveTimeline] = useState(null);
+  const [showAllTimeline, setShowAllTimeline] = useState(false);
 
   // Alterna la visualización de los detalles expandidos de cada hito
   const toggleTimeline = (id) => {
@@ -197,14 +198,14 @@ function About() {
 
             {/* Línea de Tiempo Interactiva */}
             <div className='experience-timeline'>
-              {TIMELINE_DATA.map((item, index) => (
+              {(showAllTimeline ? TIMELINE_DATA : TIMELINE_DATA.slice(0, 2)).map((item, index) => (
                 <motion.div
                   className='timeline-item'
                   key={item.id}
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{ duration: 0.4, delay: index * 0.08 }}
                 >
                   {/* Punto en la línea de tiempo */}
                   <div className='timeline-marker'></div>
@@ -253,6 +254,37 @@ function About() {
                 </motion.div>
               ))}
             </div>
+
+            {/* Botón de despliegue para ver más / menos trayectoria */}
+            {TIMELINE_DATA.length > 2 && (
+              <div className='text-center mt-4 mb-2'>
+                <motion.button
+                  type='button'
+                  onClick={() => setShowAllTimeline(!showAllTimeline)}
+                  className='btn btn-outline-info rounded-pill px-4 py-2 d-inline-flex align-items-center gap-2'
+                  style={{
+                    borderColor: "var(--color-accent-blue)",
+                    color: "var(--text-main)",
+                    backgroundColor: "rgba(0, 210, 255, 0.05)",
+                    fontSize: "0.92rem",
+                    fontWeight: 600
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "rgba(0, 210, 255, 0.15)",
+                    boxShadow: "var(--glow-cyan)"
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <i className={`fas ${showAllTimeline ? "fa-chevron-up" : "fa-chevron-down"}`}></i>
+                  <span>
+                    {showAllTimeline
+                      ? "Mostrar menos"
+                      : `Ver trayectoria completa (${TIMELINE_DATA.length - 2} más)`}
+                  </span>
+                </motion.button>
+              </div>
+            )}
 
             {/* Tecnologías principales integradas */}
             <div className='text-center mt-5 pt-4 mb-4'>

@@ -34,5 +34,10 @@ describe('About Component', () => {
     expect(credlyProfileLink).toHaveAttribute('href', 'https://www.credly.com/users/sebastian.ortega');
     expect(screen.getAllByText(/Verificar Credencial/i).length).toBe(3);
   });
+
+  it('renders 2 initial timeline cards and the expand button', () => {
+    render(<About />);
+    expect(screen.getByText(/Ver trayectoria completa/i)).toBeInTheDocument();
+  });
 });
 
