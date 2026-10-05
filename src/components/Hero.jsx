@@ -326,7 +326,7 @@ function Hero() {
                 className='hero-description mx-auto'
                 variants={itemVariants}
               >
-                Me enfoco en el diseño de arquitecturas de sistemas, modelado de bases de datos y el desarrollo de software y aplicaciones web. Aporto analisis critico, disciplina y un enfoque práctico para resolver desafíos complejos.
+                Me enfoco en el diseño de arquitecturas de sistemas, modelado de bases de datos, desarrollo de software y aplicaciones web. Aporto analisis critico, disciplina y un enfoque práctico para resolver desafíos complejos.
               </motion.p>
 
 
